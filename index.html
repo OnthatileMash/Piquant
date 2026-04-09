@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piquant Chilli Sauce| Keep It Hot As Goosebumps</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--<div class="loader-wrapper">
+            <img src="Images/Load.jpg" alt="Loading...">
+        </div>
+        <div class="content">
+            <h1 id="loading-screen">Welcome to My Website</h1>-->
+            <header class="header" id="main-header">
+                <div class="container">
+                    <nav class="nav">
+                        <div class="logo">Piquant Chilli Sauce</div>
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Sauces.html">Sauces</a></li>
+                            <li><a href="Sauces.html">Catering</a></li>
+                            <li><a href="Sauces.html">Merch</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                        <a href="Cart.html" class="cta-button">Cart</a>
+                        <button id="header-toggle" class="header-toggle" aria-label="Expand header">
+                            <span>☰</span>
+                        </button>
+                    </nav>
+                </div>
+            </header>
+            <section class="profile" id="home">
+                <div style="margin-top: 2rem; font-size: 4rem;">
+                    <img src="Images/Fav Logo.jpg" alt="logo" style="max-width: 25%; max-height: 25%;"/>
+                    <div class="profile-logo">Piquant Chilli Sauce</div>
+                </div>
+            </section>
+            <section></section>
+                
+        </div>
+
+        <script>
+            /*window.addEventListener("load", function(){
+                const loader = document.querySelector(".loader-wrapper");
+
+                //Fade out the loader
+                loader.style.opacity = "0";
+
+                //Remove it from the DOM after the fade transition
+                setTimeout(() => {loader.style.display = "none";}, 500);
+            });*/
+
+            // Replace logo text with image + text after DOM loads
+            window.addEventListener('DOMContentLoaded', function() {
+                const logo = document.querySelector('.logo');
+                if (logo) {
+                    const container = document.createElement('span');
+                    container.className = 'logo-container';
+                    const img = document.createElement('img');
+                    img.src = 'Images/Fav Logo.jpg';
+                    img.alt = 'Piquant Chilli Sauce Logo';
+                    container.appendChild(img);
+                    const text = document.createElement('span');
+                    text.innerHTML = logo.innerHTML;
+                    container.appendChild(text);
+                    logo.innerHTML = '';
+                    logo.appendChild(container);
+                }
+            });
+            // Minimize header on scroll and show toggle icon with smooth transitions
+            const header = document.getElementById('main-header');
+            const toggleBtn = document.getElementById('header-toggle');
+            let minimized = false;
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 80 && !minimized) {
+                    header.classList.add('minimized');
+                    header.classList.remove('expanded');
+                    minimized = true;
+                } else if (window.scrollY <= 80 && minimized) {
+                    header.classList.remove('minimized');
+                    header.classList.remove('expanded');
+                    minimized = false;
+                }
+            });
+            toggleBtn.addEventListener('click', function() {
+                header.classList.remove('minimized');
+                header.classList.add('expanded');
+            });
+            document.addEventListener('click', function(e) {
+                if (header.classList.contains('expanded') && !header.contains(e.target)) {
+                    header.classList.remove('expanded');
+                    header.classList.add('minimized');
+                }
+            });
+            // Simple scroll animations
+            function animateOnScroll() {
+                const elements = document.querySelectorAll('.problem-card, .process-step, .testimonial');
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                        element.style.transition = 'all 0.6s ease-out';
+                    } else {
+                        element.style.opacity = '0';
+                        element.style.transform = 'translateY(30px)';
+                    }
+                });
+            }
+            window.addEventListener('scroll', animateOnScroll);
+            window.addEventListener('load', animateOnScroll);
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
