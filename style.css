@@ -182,4 +182,37 @@
         .profile-stats { 
             display: flex; justify-content: center;
              gap: 3rem; margin-top: 3rem; 
-            }
+        }
+
+        /* Sauce Section*/
+        .sauce-section{
+            padding: 4rem;
+            background: var(--black)
+        }
+
+        .section-title{
+            font-size: 2.5;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--accent-green);
+        }
+        
+        .sauce-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .sauce-card{
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 5px solid var(--accent-lime);
+        }
+
+        #sauce-card{
+            max-width: 50%;
+            max-height: 50%;
+        }
