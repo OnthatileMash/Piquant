@@ -21,8 +21,6 @@
                             <li><a href="Sauces.html">Sauces</a></li>
                             <li><a href="Sauces.html">Catering</a></li>
                             <li><a href="Sauces.html">Merch</a></li>
-                            <li><a href="About.html">About</a></li>
-                            <li><a href="Contact.html">Contact</a></li>
                         </ul>
                         <a href="Cart.html" class="cta-button">Cart</a>
                         <button id="header-toggle" class="header-toggle" aria-label="Expand header">
@@ -31,12 +29,41 @@
                     </nav>
                 </div>
             </header>
+        
+            <footer class="footer" id="main-footer">
+                <div class="container">
+                    <nav class="nav-footer">
+                        <ul class="nav-menu">
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                            </span>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+
+            <!--
+            <footer class="collapisble-footer">
+                <div class="footer-content">footer content hidv</div>
+                <button class="footer-toggle">Toggle Footer</button>
+            </footer>
+            -->
+
+
             <section class="profile" id="home">
                 <div style="margin-top: 2rem; font-size: 4rem;">
                     <img src="Images/Fav Logo.jpg" alt="logo" style="max-width: 25%; max-height: 25%;"/>
                     <div class="profile-logo">Piquant Chilli Sauce</div>
+                    <h1>Keep It Hot As Goosebumps</h1>
                 </div>
             </section>
+
+            <section class="news-div"> 
+                <div style="margin-top: 2rem; font-size: 4rem;">
+                    <p>This will be where the news will be displayed where news will be displayed on the website</p>
+                </div>
+            </section>
+
             <section class="sauce-section">
                 <div class="container">
                     <h2 class="section-title">Sauces</h2>
@@ -48,7 +75,7 @@
                         </div>
                         <div class="sauce-card">
                             <img src="Images/Load.jpg" alt="sauce" style="max-width: 25%; max-height: 75%;">
-                            <p>(25ml)</p>
+                            <p>(50ml)</p>
                             <p>R20.00</p>
                         </div>
                     </div>
@@ -139,6 +166,44 @@
                     header.classList.add('minimized');
                 }
             });
+
+            // Minimize footer on scroll and show toggle icon with smooth transitions
+            const footer = document.getElementById('main-footer');
+            toggleBtn = document.getElementById('footer-toggle');
+            window.addEventListener('scroll', function() 
+            {
+                if (window.scrollY > 80 && !minimized) {
+                    footer.classList.add('minimized');
+                    footer.classList.remove('expanded');
+                    minimized = true;
+                } else if (window.scrollY <= 80 && minimized) 
+                {
+                    footer.classList.remove('minimized');
+                    footer.classList.remove('expanded');
+                    minimized = false;
+                }
+            });
+            toggleBtn.addEventListener('click', function() 
+            {
+                footer.classList.remove('minimized');
+                footer.classList.add('expanded');
+            });
+            document.addEventListener('click', function(e) {
+                if (footer.classList.contains('expanded') && !footer.contains(e.target)) 
+                {
+                    footer.classList.remove('expanded');
+                    footer.classList.add('minimized');
+                }
+            });
+
+            /*
+            document.querySelector('footer-toggle').addEventListener('click', function()
+            {
+                var content = document.querySelector('footer-content');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+            */
+
             // Simple scroll animations
             function animateOnScroll() {
                 const elements = document.querySelectorAll('.problem-card, .process-step, .testimonial');
