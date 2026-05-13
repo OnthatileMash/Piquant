@@ -59,9 +59,27 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             transition: padding 0.3s, box-shadow 0.3s;
         }
+
+        .footer
+        {
+            background: linear-gradient(135deg, var(--accent-light-green) 0%, var(--accent-green) 100%);
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: padding 0.3s, box-shadow 0.3s;
+        }
         .nav{
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+        .nav-footer{
+            display: flex;
+            justify-content: center;
             align-items: center;
         }
         .logo{
@@ -143,6 +161,8 @@
             }
             .header-toggle { display: inline-block !important; opacity: 1; }
         }
+
+
         /* Profile Section */
         .profile {
             color: var(--); padding: 8rem 0 4rem; text-align: center; 
@@ -182,6 +202,16 @@
         .profile-stats { 
             display: flex; justify-content: center;
              gap: 3rem; margin-top: 3rem; 
+        }
+
+        .news-div{
+            
+            width: auto;
+            height: auto;
+            margin: auto;
+            border: 1px solid #000000;
+            margin: 10px;
+            padding: 10px;
         }
 
         /* Sauce Section*/
