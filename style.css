@@ -66,21 +66,33 @@ body {
 /* Footer */
 .footer {
     padding: 1rem 0;
+    width: 100%;
 }
 
-/* Navigation */
-.nav,
 .nav-footer {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.nav {
-    justify-content: space-between;
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.nav-footer {
-    justify-content: center;
+.footer-menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-menu a:hover {
+    color: var(--accent-gold);
 }
 
 /* Logo Container */
