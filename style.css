@@ -36,23 +36,39 @@ body {
     background: linear-gradient(
         135deg,
         var(--accent-light-green),
-        var(--accent-green)
+        var(--accent-green)8
     );
     color: var(--white);
     width: 100%;
     z-index: 1000;
 }
 
+/* Smooth transitions */
+.header,
+.logo-container,
+.logo-container img,
+.logo,
+.nav-menu,
+.nav-menu a,
+.cta-button {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
 .header {
     position: fixed;
     top: 0;
+    left: 0;
     padding: 1rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* Footer */
 .footer {
     padding: 1rem 0;
 }
 
+/* Navigation */
 .nav,
 .nav-footer {
     display: flex;
@@ -67,6 +83,7 @@ body {
     justify-content: center;
 }
 
+/* Logo Container */
 .logo-container {
     display: flex;
     align-items: center;
@@ -77,6 +94,7 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .logo {
@@ -91,8 +109,10 @@ body {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    white-space: nowrap;
 }
 
+/* Navigation Menu */
 .nav-menu {
     display: flex;
     gap: 2rem;
@@ -102,12 +122,15 @@ body {
 .nav-menu a {
     text-decoration: none;
     color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .nav-menu a:hover {
     color: var(--accent-red);
 }
 
+/* Cart Button */
 .cta-button {
     padding: 0.7rem 1.5rem;
     border-radius: 50px;
@@ -122,6 +145,52 @@ body {
     );
 }
 
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Header minimisation*/
+
+.header.minimized {
+    padding: 0.35rem 0;
+    background: rgba(0, 47, 3, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Smaller Logo Image */
+.header.minimized .logo-container img {
+    width: 34px;
+    height: 34px;
+}
+
+/* Smaller Logo Text */
+.header.minimized .logo {
+    font-size: 1.25rem;
+}
+
+/* Reduce Navigation Gap */
+.header.minimized .nav-menu {
+    gap: 1rem;
+}
+
+/* Smaller Navigation Links */
+.header.minimized .nav-menu a {
+    font-size: 0.9rem;
+}
+
+/* Smaller Button */
+.header.minimized .cta-button {
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+}
+
+/* Optional subtle logo scale */
+.header.minimized .logo-container {
+    transform: scale(0.95);
+}
+
+/* Toggle Button */
 .header-toggle {
     display: none;
     background: none;
@@ -130,11 +199,6 @@ body {
     font-size: 1.8rem;
     cursor: pointer;
 }
-
-.header.minimized {
-    padding: 0.5rem 0;
-}
-
 /* Hero */
 
 .profile {
