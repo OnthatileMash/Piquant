@@ -303,7 +303,12 @@ body {
     .nav-menu {
         display: none;
     }
-
+    
+    .footer-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+        
     .header.expanded .nav-menu {
         display: flex;
         flex-direction: column;
