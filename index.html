@@ -74,17 +74,37 @@
     </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="main-footer">
     <div class="container">
+
         <nav class="nav-footer">
             <ul class="footer-menu">
                 <li><a href="About.html">About</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>
+                    Piquant Chilli Sauce produces premium chilli sauces
+                    crafted to bring flavour and heat to every meal.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@piquantchilli.co.za</p>
+                <p>Phone: +27 XX XXX XXXX</p>
+            </div>
+
+        </div>
+
     </div>
 </footer>
-
+    
 <script>
 const header = document.getElementById('main-header');
 const toggleBtn = document.getElementById('header-toggle');
@@ -109,6 +129,24 @@ document.addEventListener('click', (e) => {
     ) {
         header.classList.remove('expanded');
     }
+});
+
+    const footer = document.getElementById('main-footer');
+
+window.addEventListener('scroll', () => {
+
+    const scrollPosition =
+        window.innerHeight + window.scrollY;
+
+    const pageHeight =
+        document.documentElement.scrollHeight;
+
+    if (scrollPosition >= pageHeight - 20) {
+        footer.classList.add('expanded');
+    } else {
+        footer.classList.remove('expanded');
+    }
+
 });
 </script>
 
