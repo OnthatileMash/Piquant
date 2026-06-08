@@ -31,17 +31,6 @@ body {
 
 /* Header */
 
-.header,
-.footer {
-    background: linear-gradient(
-        135deg,
-        var(--accent-light-green),
-        var(--accent-green)8
-    );
-    color: var(--white);
-    width: 100%;
-    z-index: 1000;
-}
 
 /* Smooth transitions */
 .header,
