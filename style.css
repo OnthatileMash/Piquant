@@ -35,7 +35,7 @@ body {
     background: linear-gradient(
         135deg,
         var(--accent-light-green),
-        var(--accent-green)8
+        var(--accent-green)
     );
     color: var(--white);
     width: 100%;
