@@ -74,30 +74,58 @@ body {
     width: 100%;
 }
 
+/* About & Contact menu */
+
 .nav-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .footer-menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .footer-menu a {
     color: var(--white);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .footer-menu a:hover {
     color: var(--accent-gold);
+}
+/* Expandable Content */
+
+.footer-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition:
+        max-height 0.6s ease,
+        opacity 0.6s ease,
+        padding 0.6s ease;
+
+    text-align: center;
+}
+
+.footer.expanded .footer-content {
+    max-height: 300px;
+    opacity: 1;
+    padding: 1rem 0 2rem;
+}
+
+.footer-section {
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
 }
 
 /* Logo Container */
