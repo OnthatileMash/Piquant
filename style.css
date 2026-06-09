@@ -132,10 +132,13 @@ body {
 
 .footer-menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-direction: row;
 }
 
 .footer-menu a {
@@ -374,14 +377,14 @@ body {
 /* Mobile */
 
 @media (max-width: 768px) {
-
-    .nav-menu {
-        display: none;
-    }
-    
     .footer-menu {
-        flex-direction: column;
-        gap: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: nowrap;
+    }
     }
         
     .header.expanded .nav-menu {
