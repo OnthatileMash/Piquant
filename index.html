@@ -108,32 +108,21 @@
 <script>
 const header = document.getElementById('main-header');
 const toggleBtn = document.getElementById('header-toggle');
+const footer = document.getElementById('main-footer');
+const navFooter = document.querySelector('.nav-footer');
+
+/* Header */
 
 window.addEventListener('scroll', () => {
+
     if (window.scrollY > 80) {
         header.classList.add('minimized');
     } else {
         header.classList.remove('minimized');
         header.classList.remove('expanded');
     }
-});
 
-toggleBtn.addEventListener('click', () => {
-    header.classList.toggle('expanded');
-});
-
-document.addEventListener('click', (e) => {
-    if (
-        header.classList.contains('expanded') &&
-        !header.contains(e.target)
-    ) {
-        header.classList.remove('expanded');
-    }
-});
-
-    const footer = document.getElementById('main-footer');
-
-window.addEventListener('scroll', () => {
+    /* Footer */
 
     const scrollPosition =
         window.innerHeight + window.scrollY;
@@ -141,10 +130,30 @@ window.addEventListener('scroll', () => {
     const pageHeight =
         document.documentElement.scrollHeight;
 
-    if (scrollPosition >= pageHeight - 20) {
+    const bottomReached =
+        scrollPosition >= pageHeight - 20;
+
+    if (bottomReached) {
         footer.classList.add('expanded');
+        navFooter.classList.add('hidden');
     } else {
         footer.classList.remove('expanded');
+        navFooter.classList.remove('hidden');
+    }
+
+});
+
+toggleBtn.addEventListener('click', () => {
+    header.classList.toggle('expanded');
+});
+
+document.addEventListener('click', (e) => {
+
+    if (
+        header.classList.contains('expanded') &&
+        !header.contains(e.target)
+    ) {
+        header.classList.remove('expanded');
     }
 
 });
