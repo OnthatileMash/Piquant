@@ -289,7 +289,8 @@ body {
 /* Hero */
 
 .profile {
-    padding-top: 10rem;
+    padding-top: 8rem;
+    min-height: 80vh;
     text-align: center;
     color: white;
     background: linear-gradient(
@@ -376,6 +377,10 @@ body {
         inset 0 0 25px rgba(0,95,32,.2);
 
     position: relative;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
 }
 
 .sauce-card::before {
@@ -393,6 +398,10 @@ body {
     border-radius: 30px;
 
     pointer-events: none;
+}
+
+.sauce-card:hover {
+    transform: translateY(-5px);
 }
 
 .sauce-image-frame {
@@ -562,6 +571,8 @@ body {
         padding: 1rem;
         border-radius: 10px;
         background: var(--primary-green);
+        width: 220px;
+        box-shadow: 0 8px 20px rgba(0,0,0,.25);
     }
 
     .header-toggle {
