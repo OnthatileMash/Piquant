@@ -256,7 +256,23 @@ const navFooter = document.querySelector('.nav-footer');
 
 /* Header */
 
+let ticking = false;
+
 window.addEventListener('scroll', () => {
+
+    if (!ticking) {
+
+        window.requestAnimationFrame(() => {
+
+            handleScroll();
+
+            ticking = false;
+
+        });
+
+        ticking = true;
+    }
+});
 
     if (window.scrollY > 80) {
         header.classList.add('minimized');
