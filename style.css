@@ -286,6 +286,23 @@ body {
     font-size: 1.8rem;
     cursor: pointer;
 }
+
+/*Info Bar*/
+.info-bar {
+    background: var(--primary-green);
+    color: white;
+    padding: 0.75rem 0;
+    margin-top: 90px;
+}
+
+.info-bar .container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 /* Hero */
 
 .profile {
@@ -326,6 +343,39 @@ body {
     font-size: 3rem;
 }
 
+/*Call To Action*/
+.cta-section {
+    padding: 3rem 0;
+    text-align: center;
+    background: white;
+}
+
+.cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.cta-main,
+.cta-secondary {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cta-main {
+    background: var(--accent-red);
+    color: white;
+}
+
+.cta-secondary {
+    background: var(--primary-green);
+    color: white;
+}
+
 /* News */
 
 .news-div {
@@ -333,6 +383,35 @@ body {
     padding: 1rem;
     border: 1px solid #000;
 }
+
+/*Trust Info*/
+.trust-section {
+    padding: 4rem 0;
+    background: #f8f8f8;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.trust-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.08);
+}
+
+.trust-card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-green);
+}
+
 
 /* Trust*/
 
@@ -554,6 +633,27 @@ body {
 
     color: #9acd32;
 }
+
+/*Social Media*/
+.social-section {
+    padding: 3rem 0;
+    text-align: center;
+    background: var(--primary-green);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
 /* Media */
 @media (max-width:768px){
 
