@@ -334,6 +334,35 @@ body {
     border: 1px solid #000;
 }
 
+/* Trust*/
+
+.trust-section {
+    padding: 4rem 0;
+    background: #f8f8f8;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.trust-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.08);
+}
+
+.trust-card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-green);
+}
+
 /* Sauces */
 
 .sauce-section {
