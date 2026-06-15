@@ -436,6 +436,120 @@ body {
     color: var(--primary-green);
 }
 
+
+/* Certifications */
+.certifications-section {
+    margin-top: 4rem;
+}
+
+.certificate-slider {
+    position: relative;
+}
+
+.certificate-slide {
+    display: none;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 2rem;
+
+    box-shadow:
+        0 5px 25px rgba(0,0,0,.1);
+}
+
+.certificate-slide.active {
+    display: block;
+}
+
+.certificate-logo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 2rem;
+}
+
+.certificate-logo img {
+    width: 120px;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+.certificate-content {
+    text-align: center;
+}
+
+.certificate-content h3 {
+    color: var(--primary-green);
+
+    margin-bottom: 1rem;
+}
+
+.certificate-content h4 {
+    color: var(--accent-orange);
+
+    margin: 1rem 0;
+}
+
+.certificate-content ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 1rem 0;
+}
+
+.certificate-content li {
+    margin-bottom: .5rem;
+}
+
+.certificate-benefit,
+.certificate-result {
+    font-weight: 700;
+
+    color: var(--accent-green);
+
+    margin-top: 1rem;
+}
+
+.slider-controls {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.slider-controls button {
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background: var(--primary-green);
+
+    color: white;
+
+    font-size: 1.3rem;
+}
+
 /* Sauces */
 
 .sauce-section {
