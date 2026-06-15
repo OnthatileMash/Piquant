@@ -144,6 +144,190 @@ rel="stylesheet">
                 <p>PayFast • Ozow • Yoco</p>
             </div>
 
+            <div class="certifications-section">
+
+    <h2 class="section-title">
+        Certifications & Compliance
+    </h2>
+
+    <div class="certificate-slider">
+
+        <!-- Certificate 1 -->
+
+        <div class="certificate-slide active">
+
+            <div class="certificate-logo">
+                <img src="Images/Selema-Agriserv-Logo.png"
+                     alt="Selema Agriserv Farming Logo">
+            </div>
+
+            <div class="certificate-content">
+
+                <h3>
+                    Selema Agriserv Farming (Pty) Ltd
+                </h3>
+
+                <h4>
+                    Agro-Processing & Manufacturing Training
+                </h4>
+
+                <p>
+                    Successfully completed specialised training
+                    on 06 November 2025 covering:
+                </p>
+
+                <ul>
+                    <li>Agro-processing</li>
+                    <li>Health and Safety</li>
+                    <li>Food Safety</li>
+                    <li>Hygiene Practices</li>
+                    <li>Good Manufacturing Practices (GMP)</li>
+                    <li>Product Branding</li>
+                </ul>
+
+                <p class="certificate-benefit">
+                    This training strengthens Piquant's ability
+                    to manufacture safe, high-quality products
+                    according to recognised food production
+                    standards.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Certificate 2 -->
+
+        <div class="certificate-slide">
+
+            <div class="certificate-logo">
+                <img src="Images/Alison-Logo.png"
+                     alt="Alison Logo">
+            </div>
+
+            <div class="certificate-content">
+
+                <h3>
+                    HACCP Certified
+                </h3>
+
+                <h4>
+                    Alison Learning Platform
+                </h4>
+
+                <p>
+                    HACCP (Hazard Analysis and Critical Control
+                    Points) certification demonstrates knowledge
+                    of internationally recognised food safety
+                    systems.
+                </p>
+
+                <h4>
+                    CPD Certified
+                </h4>
+
+                <p>
+                    Approved through the CPD Certification
+                    Service.
+                </p>
+
+                <div class="benefits-list">
+
+                    <p>✓ Improved food safety management</p>
+
+                    <p>✓ Reduced contamination risks</p>
+
+                    <p>✓ Increased customer confidence</p>
+
+                    <p>✓ Better quality assurance processes</p>
+
+                    <p>✓ Compliance with international food
+                       safety practices</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Certificate 3 -->
+
+        <div class="certificate-slide">
+
+            <div class="certificate-logo">
+                <img src="Images/University-Of-Limpopo-Logo.png"
+                     alt="University of Limpopo Logo">
+
+                <img src="Images/LATS-Logo.png"
+                     alt="Limpopo Agro-Food Technology Station">
+
+                <img src="Images/TIA-Logo.png"
+                     alt="Technology Innovation Agency">
+            </div>
+
+            <div class="certificate-content">
+
+                <h3>
+                    Product Analysis & Permit
+                </h3>
+
+                <h4>
+                    Limpopo Agro-Food Technology Station
+                </h4>
+
+                <p>
+                    Product testing and analysis performed
+                    in partnership with:
+                </p>
+
+                <ul>
+
+                    <li>University of Limpopo</li>
+
+                    <li>Limpopo Agro-Food Technology Station</li>
+
+                    <li>Technology Innovation Agency</li>
+
+                </ul>
+
+                <h4>
+                    Certificate of Analysis
+                </h4>
+
+                <p class="certificate-result">
+                    Conclusion:
+                    The product complies with the permissible
+                    limit.
+                </p>
+
+                <p>
+                    This confirms that Piquant's condiment
+                    sauce met the required laboratory
+                    standards during testing.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="slider-controls">
+
+        <button id="prevCert">
+            ❮
+        </button>
+
+        <button id="nextCert">
+            ❯
+        </button>
+
+    </div>
+
+            
+        
+            </div>
+    
         </div>
 
     </div>
@@ -482,6 +666,62 @@ navLinks.forEach(link => {
     });
 
 });
+    const slides =
+    document.querySelectorAll('.certificate-slide');
+
+let currentSlide = 0;
+
+function showSlide(index) {
+
+    slides.forEach(slide => {
+        slide.classList.remove('active');
+    });
+
+    slides[index].classList.add('active');
+}
+
+document
+.getElementById('nextCert')
+.addEventListener('click', () => {
+
+    currentSlide++;
+
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+});
+
+document
+.getElementById('prevCert')
+.addEventListener('click', () => {
+
+    currentSlide--;
+
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+    }
+
+    showSlide(currentSlide);
+});
+
+/* Auto-slide */
+
+setInterval(() => 
+    {
+
+    currentSlide++;
+
+    if (currentSlide >= slides.length) 
+    {
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+
+
+    }, 6000);
 </script>
 
 </body>
