@@ -751,12 +751,7 @@ body {
 
 .sauce-section {
     padding: 4rem 0;
-    background:
-    radial-gradient(
-        circle,
-        #071108,
-        #000
-    );
+    background: radial-gradient(circle, #071108, #000);
 }
 
 .section-title {
