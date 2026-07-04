@@ -311,8 +311,11 @@ body {
     text-align: center;
 }
 
-/* Hero */
+/* Profile */
 
+/* ===================================
+   PROFILE SECTION
+=================================== */
 .profile {
     padding-top: 4rem;
     min-height: 80vh;
@@ -383,6 +386,157 @@ body {
     background: var(--primary-green);
     color: white;
 }
+/* Gallery */
+
+/* ===================================
+   GALLERY SECTION
+=================================== */
+
+.gallery-section {
+    padding: 5rem 1rem;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("Images/wood-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery-overlay {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2rem 0;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    color: #f6c342;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.gallery-subtitle {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.gallery-collage {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 10px solid #8b5a2b;
+    background: #2b1a10;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.45),
+        inset 0 0 0 2px rgba(255, 220, 160, 0.12);
+    min-height: 220px;
+}
+
+.gallery-item::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 2px solid rgba(255, 220, 160, 0.2);
+    border-radius: 12px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.9rem 1rem;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0)
+    );
+    color: #f6c342;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5px;
+    z-index: 3;
+}
+
+/* Collage layout sizes */
+.item-large {
+    grid-column: span 6;
+    min-height: 460px;
+}
+
+.item-tall {
+    grid-column: span 4;
+    min-height: 460px;
+}
+
+.item-wide {
+    grid-column: span 8;
+    min-height: 260px;
+}
+
+.gallery-item:not(.item-large):not(.item-tall):not(.item-wide) {
+    grid-column: span 4;
+    min-height: 220px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .gallery-collage {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .item-large,
+    .item-tall,
+    .item-wide,
+    .gallery-item:not(.item-large):not(.item-tall):not(.item-wide) {
+        grid-column: span 6;
+        min-height: 260px;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-collage {
+        grid-template-columns: 1fr;
+    }
+
+    .item-large,
+    .item-tall,
+    .item-wide,
+    .gallery-item {
+        grid-column: auto;
+        min-height: 240px;
+    }
+
+    .gallery-section {
+        padding: 3rem 1rem;
+    }
+                           }
+
 
 /* News */
 
