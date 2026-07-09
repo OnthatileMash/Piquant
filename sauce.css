@@ -381,3 +381,2030 @@ FEATURED PRODUCTS
 }
 
 .product-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.product-card{
+
+    background:#191919;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:2px solid #234b24;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.product-image{
+
+    padding:30px;
+
+    background:#111;
+
+}
+
+.product-image img{
+
+    height:270px;
+
+    object-fit:contain;
+
+    margin:auto;
+
+}
+
+.product-content{
+
+    padding:25px;
+
+}
+
+.product-content h3{
+
+    color:var(--gold);
+
+    margin-bottom:12px;
+
+}
+
+.tagline{
+
+    color:#d8b05d;
+
+    font-style:italic;
+
+    margin-bottom:15px;
+
+}
+
+.card-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:25px 0;
+
+    font-weight:700;
+
+}
+
+.product-button{
+
+    display:block;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:var(--primary-green);
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.product-button:hover{
+
+    background:var(--light-green);
+
+    color:black;
+
+}
+
+/*================================
+RESPONSIVE
+================================*/
+
+@media(max-width:900px){
+
+.header .container{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.navigation ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.sauce-hero{
+
+    text-align:center;
+
+}
+
+.sauce-hero h1{
+
+    font-size:2.5rem;
+
+}
+
+.quick-card img{
+
+    height:150px;
+
+}
+
+.product-image img{
+
+    height:220px;
+
+}
+
+           }
+
+    /*==================================================
+PART 2
+SAUCE SHOWCASE
+==================================================*/
+
+.sauce-showcase{
+
+    padding:100px 0;
+
+    background:#111;
+
+}
+
+.sauce-showcase:nth-child(even){
+
+    background:#181818;
+
+}
+
+.sauce-layout{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+/*==================================
+PRODUCT GALLERY
+==================================*/
+
+.sauce-gallery{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.main-image{
+
+    background:#191919;
+
+    border:3px solid #1f4f1f;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+.main-image img{
+
+    width:100%;
+
+    max-height:550px;
+
+    object-fit:contain;
+
+    transition:.4s;
+
+}
+
+.main-image:hover img{
+
+    transform:scale(1.04);
+
+}
+
+.thumbnail-gallery{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.thumbnail-gallery img{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:15px;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+    border:2px solid transparent;
+
+    transition:.35s;
+
+}
+
+.thumbnail-gallery img:hover{
+
+    border-color:var(--gold);
+
+    transform:translateY(-6px);
+
+}
+
+/*==================================
+PRODUCT INFORMATION
+==================================*/
+
+.sauce-information{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.category{
+
+    display:inline-block;
+
+    width:max-content;
+
+    padding:8px 20px;
+
+    border-radius:50px;
+
+    background:rgba(246,195,66,.15);
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.sauce-information h2{
+
+    font-size:3rem;
+
+    color:white;
+
+}
+
+.sauce-information h4{
+
+    font-style:italic;
+
+    color:#d8b05d;
+
+    font-size:1.25rem;
+
+}
+
+.sauce-information p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+/*==================================
+PRODUCT META
+==================================*/
+
+.product-meta{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    margin-top:15px;
+
+}
+
+.product-meta div{
+
+    background:#1a1a1a;
+
+    border:2px solid #224622;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+.product-meta strong{
+
+    display:block;
+
+    color:var(--gold);
+
+    margin-bottom:8px;
+
+}
+
+.product-meta span{
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+/*==================================
+BUTTON GROUP
+==================================*/
+
+.button-group{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.primary-btn,
+
+.secondary-btn{
+
+    text-decoration:none;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.primary-btn{
+
+    background:var(--gold);
+
+    color:black;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(246,195,66,.35);
+
+}
+
+.secondary-btn{
+
+    border:2px solid var(--gold);
+
+    color:white;
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--gold);
+
+    color:black;
+
+}
+
+/*==================================================
+FLAVOUR PROFILE
+==================================================*/
+
+.flavour-profile{
+
+    padding:90px 0;
+
+    background:#161616;
+
+}
+
+.flavour-profile h2{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.profile-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.profile-item{
+
+    background:#202020;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    border:2px solid #224622;
+
+}
+
+.profile-item span{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.meter{
+
+    width:100%;
+
+    height:12px;
+
+    background:#2c2c2c;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+.fill{
+
+    height:100%;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        var(--gold),
+        var(--orange),
+        var(--red)
+    );
+
+}
+
+.heat-2{width:40%;}
+.heat-3{width:60%;}
+.heat-4{width:80%;}
+.heat-5{width:100%;}
+
+.sweet-2{width:40%;}
+.sweet-3{width:60%;}
+.sweet-4{width:80%;}
+.sweet-5{width:100%;}
+
+.freshness-5{width:100%;}
+.tangy-4{width:80%;}
+.smoky-2{width:40%;}
+.versatile-5{width:100%;}
+
+/*==================================================
+NUTRITION
+==================================================*/
+
+.nutrition-section{
+
+    padding:100px 0;
+
+    background:#111;
+
+}
+
+.nutrition-section h2{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+.nutrition-section p{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#cfcfcf;
+
+}
+
+.nutrition-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:#191919;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+.nutrition-table thead{
+
+    background:var(--primary-green);
+
+}
+
+.nutrition-table th{
+
+    padding:18px;
+
+    color:white;
+
+    text-align:left;
+
+}
+
+.nutrition-table td{
+
+    padding:18px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.nutrition-table tbody tr{
+
+    transition:.25s;
+
+}
+
+.nutrition-table tbody tr:hover{
+
+    background:#242424;
+
+}
+
+.nutrition-table td:last-child{
+
+    text-align:right;
+
+    font-weight:700;
+
+    color:var(--gold);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.sauce-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+.main-image img{
+
+    max-height:420px;
+
+}
+
+.product-meta{
+
+    grid-template-columns:1fr;
+
+}
+
+.button-group{
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.sauce-information{
+
+    text-align:center;
+
+}
+
+.category{
+
+    margin:auto;
+
+}
+
+.thumbnail-gallery{
+
+    justify-content:center;
+
+}
+
+.primary-btn,
+
+.secondary-btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.nutrition-table{
+
+    font-size:.9rem;
+
+}
+
+}
+
+/*==================================================
+PART 3
+INGREDIENTS • SERVING • STORAGE
+HIGHLIGHTS • REVIEWS
+==================================================*/
+
+/*==================================
+SECTION SPACING
+==================================*/
+
+.ingredients-section,
+.serving-section,
+.storage-section,
+.product-highlights,
+.review-section,
+.allergen-section{
+
+    padding:100px 0;
+
+}
+
+.ingredients-section{
+
+    background:#181818;
+
+}
+
+.serving-section{
+
+    background:#111111;
+
+}
+
+.storage-section{
+
+    background:#181818;
+
+}
+
+.product-highlights{
+
+    background:#111111;
+
+}
+
+.review-section{
+
+    background:
+    linear-gradient(rgba(0,52,8,.90),
+    rgba(0,47,3,.95));
+
+}
+
+.allergen-section{
+
+    background:#141414;
+
+}
+
+/*==================================
+HEADINGS
+==================================*/
+
+.ingredients-section h2,
+.serving-section h2,
+.storage-section h2,
+.product-highlights h2,
+.review-section h2,
+.allergen-section h2{
+
+    text-align:center;
+
+    font-size:2.7rem;
+
+    margin-bottom:18px;
+
+    color:white;
+
+}
+
+.ingredients-section p,
+.serving-section p,
+.storage-section p,
+.product-highlights p{
+
+    text-align:center;
+
+    color:#d8d8d8;
+
+}
+
+/*==================================
+INGREDIENT GRID
+==================================*/
+
+.ingredient-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:22px;
+
+    margin-top:55px;
+
+}
+
+.ingredient-grid span{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:90px;
+
+    background:#202020;
+
+    border:2px solid #234b24;
+
+    border-radius:18px;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.ingredient-grid span:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+    background:#272727;
+
+    color:var(--gold);
+
+}
+
+/*==================================
+SERVING GRID
+==================================*/
+
+.serving-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.serving-card{
+
+    background:#1a1a1a;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:2px solid #234b24;
+
+    transition:.35s;
+
+}
+
+.serving-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.serving-card{
+
+    font-size:3rem;
+
+}
+
+.serving-card h4{
+
+    margin-top:20px;
+
+    color:var(--gold);
+
+    font-size:1.25rem;
+
+}
+
+.serving-card p{
+
+    margin-top:15px;
+
+    color:#cccccc;
+
+}
+
+/*==================================
+STORAGE GRID
+==================================*/
+
+.storage-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+    margin-top:55px;
+
+}
+
+.storage-card{
+
+    background:#202020;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    border:2px solid #234b24;
+
+    transition:.35s;
+
+}
+
+.storage-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+}
+
+.storage-card{
+
+    font-size:3rem;
+
+}
+
+.storage-card h4{
+
+    margin-top:20px;
+
+    color:var(--gold);
+
+    font-size:1.2rem;
+
+}
+
+.storage-card p{
+
+    margin-top:15px;
+
+}
+
+/*==================================
+ALLERGEN CARD
+==================================*/
+
+.warning-card{
+
+    max-width:950px;
+
+    margin:auto;
+
+    margin-top:45px;
+
+    background:#1d1d1d;
+
+    border-left:6px solid var(--orange);
+
+    padding:35px;
+
+    border-radius:18px;
+
+}
+
+.warning-card p{
+
+    text-align:left;
+
+    line-height:1.8;
+
+    color:#dddddd;
+
+}
+
+/*==================================
+PRODUCT HIGHLIGHTS
+==================================*/
+
+.highlight-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.highlight-card{
+
+    background:#1d1d1d;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:2px solid #234b24;
+
+    transition:.35s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--gold);
+
+}
+
+.highlight-card{
+
+    font-size:3rem;
+
+}
+
+.highlight-card h4{
+
+    margin-top:18px;
+
+    color:var(--gold);
+
+    font-size:1.35rem;
+
+}
+
+.highlight-card p{
+
+    margin-top:15px;
+
+    line-height:1.8;
+
+}
+
+/*==================================
+CUSTOMER REVIEW
+==================================*/
+
+.review-section{
+
+    text-align:center;
+
+}
+
+.review-section blockquote{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:1.8rem;
+
+    line-height:1.9;
+
+    font-style:italic;
+
+    color:white;
+
+    position:relative;
+
+}
+
+.review-section blockquote::before{
+
+    content:"“";
+
+    position:absolute;
+
+    top:-60px;
+
+    left:-20px;
+
+    font-size:7rem;
+
+    color:rgba(255,255,255,.08);
+
+}
+
+.review-section cite{
+
+    display:block;
+
+    margin-top:45px;
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    font-style:normal;
+
+    font-size:1.1rem;
+
+}
+
+/*==================================
+PREMIUM HOVER EFFECTS
+==================================*/
+
+.product-card,
+.quick-card,
+.serving-card,
+.highlight-card,
+.storage-card,
+.ingredient-grid span{
+
+    transition:
+
+    transform .35s,
+
+    box-shadow .35s,
+
+    border-color .35s;
+
+}
+
+.product-card:hover,
+.quick-card:hover,
+.serving-card:hover,
+.highlight-card:hover,
+.storage-card:hover,
+.ingredient-grid span:hover{
+
+    box-shadow:
+
+    0 25px 50px rgba(0,0,0,.45);
+
+}
+
+/*==================================
+FADE ANIMATION
+==================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:
+
+    fadeUp .9s ease forwards;
+
+}
+
+/*==================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:992px){
+
+.review-section blockquote{
+
+    font-size:1.5rem;
+
+}
+
+.highlight-grid,
+.storage-grid,
+.serving-grid,
+.ingredient-grid{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.highlight-grid,
+.storage-grid,
+.serving-grid,
+.ingredient-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.review-section blockquote{
+
+    font-size:1.2rem;
+
+    padding:0 10px;
+
+}
+
+.ingredients-section h2,
+.serving-section h2,
+.storage-section h2,
+.product-highlights h2,
+.review-section h2,
+.allergen-section h2{
+
+    font-size:2rem;
+
+}
+
+.warning-card{
+
+    padding:25px;
+
+}
+
+    }
+
+/*==================================================
+PART 4
+PRODUCT COMPARISON
+FAQ
+CALL TO ACTION
+FOOTER
+WHATSAPP BUTTON
+SCROLL TO TOP
+PREMIUM EFFECTS
+==================================================*/
+
+/*==================================
+PRODUCT COMPARISON
+==================================*/
+
+.comparison-section{
+
+    padding:110px 0;
+
+    background:#101010;
+
+}
+
+.comparison-section h2{
+
+    text-align:center;
+
+    font-size:2.8rem;
+
+    margin-bottom:20px;
+
+}
+
+.comparison-section p{
+
+    text-align:center;
+
+    color:#cfcfcf;
+
+    margin-bottom:50px;
+
+}
+
+.comparison-wrapper{
+
+    overflow-x:auto;
+
+}
+
+.comparison-table{
+
+    width:100%;
+
+    min-width:900px;
+
+    border-collapse:collapse;
+
+    background:#181818;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
+
+}
+
+.comparison-table th{
+
+    background:var(--primary-green);
+
+    color:white;
+
+    padding:22px;
+
+}
+
+.comparison-table td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.comparison-table tr:hover{
+
+    background:#222;
+
+}
+
+.comparison-table td:first-child{
+
+    color:var(--gold);
+
+    font-weight:700;
+
+}
+
+/*==================================
+RECIPE SECTION
+==================================*/
+
+.recipe-section{
+
+    padding:100px 0;
+
+    background:#181818;
+
+}
+
+.recipe-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.recipe-card{
+
+    background:#202020;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:2px solid #234b24;
+
+    transition:.35s;
+
+}
+
+.recipe-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+}
+
+.recipe-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.recipe-content{
+
+    padding:25px;
+
+}
+
+.recipe-content h3{
+
+    color:var(--gold);
+
+    margin-bottom:12px;
+
+}
+
+/*==================================
+FAQ
+==================================*/
+
+.faq-section{
+
+    padding:110px 0;
+
+    background:#101010;
+
+}
+
+.faq-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.faq-item{
+
+    margin-bottom:20px;
+
+    background:#1d1d1d;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:2px solid #234b24;
+
+}
+
+.faq-question{
+
+    padding:22px 30px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.faq-answer{
+
+    display:none;
+
+    padding:0 30px 25px;
+
+    color:#d6d6d6;
+
+    line-height:1.8;
+
+}
+
+.faq-item.active .faq-answer{
+
+    display:block;
+
+}
+
+/*==================================
+CALL TO ACTION
+==================================*/
+
+.cta-section{
+
+    padding:120px 0;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(rgba(0,52,8,.9),
+    rgba(0,47,3,.9));
+
+}
+
+.cta-section h2{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.cta-section p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/*==================================
+FOOTER
+==================================*/
+
+.footer{
+
+    background:#050505;
+
+    padding:70px 0 30px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:40px;
+
+}
+
+.footer h3{
+
+    color:var(--gold);
+
+    margin-bottom:18px;
+
+}
+
+.footer ul{
+
+    list-style:none;
+
+}
+
+.footer ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer a{
+
+    color:#cccccc;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer a:hover{
+
+    color:var(--gold);
+
+}
+
+.footer-bottom{
+
+    margin-top:50px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    color:#999;
+
+}
+
+/*==================================
+SOCIAL ICONS
+==================================*/
+
+.social-links{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:20px;
+
+}
+
+.social-links a{
+
+    width:50px;
+
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#1d1d1d;
+
+    transition:.35s;
+
+}
+
+.social-links a:hover{
+
+    background:var(--gold);
+
+    color:black;
+
+}
+
+/*==================================
+FLOATING WHATSAPP
+==================================*/
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:68px;
+
+    height:68px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:white;
+
+    font-size:2rem;
+
+    text-decoration:none;
+
+    z-index:9999;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+
+    transition:.35s;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+
+}
+
+/*==================================
+SCROLL TO TOP
+==================================*/
+
+.scroll-top{
+
+    position:fixed;
+
+    left:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+    color:black;
+
+    text-decoration:none;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:9998;
+
+}
+
+.scroll-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/*==================================
+SCROLL PROGRESS BAR
+==================================*/
+
+.progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:5px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        var(--gold),
+        var(--orange),
+        var(--red)
+    );
+
+    z-index:99999;
+
+}
+
+/*==================================
+GLASS EFFECTS
+==================================*/
+
+.glass{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/*==================================
+CUSTOM SCROLLBAR
+==================================*/
+
+::-webkit-scrollbar{
+
+    width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary-green);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--gold);
+
+}
+
+/*==================================
+UTILITY CLASSES
+==================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:50px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:50px;}
+
+/*==================================
+ANIMATIONS
+==================================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.float{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.pulse{
+
+    animation:pulse 2.5s infinite;
+
+}
+
+/*==================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:992px){
+
+.cta-section h2{
+
+    font-size:2.3rem;
+
+}
+
+.footer-grid{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.recipe-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.social-links{
+
+    justify-content:center;
+
+}
+
+.whatsapp-float{
+
+    width:60px;
+
+    height:60px;
+
+    right:18px;
+
+    bottom:18px;
+
+}
+
+.scroll-top{
+
+    width:55px;
+
+    height:55px;
+
+    left:18px;
+
+    bottom:18px;
+
+}
+
+.cta-buttons{
+
+    flex-direction:column;
+
+}
+
+.comparison-table{
+
+    font-size:.9rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.cta-section h2{
+
+    font-size:2rem;
+
+}
+
+.faq-question{
+
+    font-size:.95rem;
+
+}
+
+.recipe-card img{
+
+    height:200px;
+
+}
+
+      }
