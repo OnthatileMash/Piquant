@@ -1,0 +1,383 @@
+/*
+==================================================
+PIQUANT CHILLI SAUCE
+SAUCES.CSS - PART 1
+==================================================
+Contains:
+
+• Variables
+• Global Reset
+• Typography
+• Header
+• Hero Banner
+• Hero Buttons
+• Quick Navigation
+• Featured Product Cards
+• Responsive Layout
+==================================================
+*/
+
+:root{
+
+    --primary-green:#003408;
+    --accent-green:#002f03;
+    --light-green:#93f542;
+    --gold:#f6c342;
+    --orange:#f59e42;
+    --red:#d7263d;
+
+    --white:#ffffff;
+    --black:#111111;
+    --grey:#f3f3f3;
+
+    --radius:18px;
+
+    --shadow:
+        0 15px 35px rgba(0,0,0,.25);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+    background:#101010;
+    color:white;
+    line-height:1.6;
+
+}
+
+img{
+
+    display:block;
+    max-width:100%;
+
+}
+
+.container{
+
+    width:min(1200px,92%);
+    margin:auto;
+
+}
+
+/*================================
+HEADER
+================================*/
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:rgba(0,52,8,.95);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo img{
+
+    width:180px;
+
+}
+
+.navigation ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:28px;
+
+}
+
+.navigation a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.navigation a:hover,
+
+.navigation a.active{
+
+    color:var(--gold);
+
+}
+
+/*================================
+HERO
+================================*/
+
+.sauce-hero{
+
+    min-height:80vh;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+
+    url("Images/sauce-hero-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-overlay{
+
+    width:100%;
+
+    padding:80px 0;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+.sauce-hero h1{
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    margin-bottom:20px;
+
+}
+
+.sauce-hero p{
+
+    max-width:700px;
+
+    font-size:1.15rem;
+
+    margin-bottom:40px;
+
+}
+
+/*================================
+BUTTONS
+================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-primary,
+
+.btn-secondary{
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:var(--gold);
+
+    color:black;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--gold);
+
+    color:white;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--gold);
+
+    color:black;
+
+}
+
+/*================================
+QUICK NAVIGATION
+================================*/
+
+.quick-nav{
+
+    padding:80px 0;
+
+    background:#181818;
+
+}
+
+.quick-nav h2{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    font-size:2.5rem;
+
+}
+
+.quick-nav-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:30px;
+
+}
+
+.quick-card{
+
+    text-decoration:none;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:#202020;
+
+    border:2px solid #234b24;
+
+    transition:.35s;
+
+}
+
+.quick-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+}
+
+.quick-card img{
+
+    height:180px;
+
+    object-fit:contain;
+
+    margin:auto;
+
+}
+
+.quick-card h3{
+
+    margin:20px 0 10px;
+
+    color:var(--gold);
+
+}
+
+/*================================
+FEATURED PRODUCTS
+================================*/
+
+.featured-products{
+
+    padding:90px 0;
+
+}
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-heading span{
+
+    color:var(--orange);
+
+    font-weight:700;
+
+}
+
+.section-heading h2{
+
+    font-size:3rem;
+
+    margin:15px 0;
+
+}
+
+.product-grid{
