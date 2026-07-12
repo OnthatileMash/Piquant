@@ -1,4 +1,4 @@
-:root { 
+:root {
     --primary-green: #003408;
     --accent-green: #002f03;
     --accent-light-green: #02ff3de1;
@@ -6,15 +6,24 @@
     --accent-gold: #f6c342;
     --accent-orange: #f59e42;
     --accent-red: #d7263d;
+
     --white: #fff;
     --black: #000;
     --text-dark: #222b45;
+
+    --radius: 18px;
+
+    --shadow: 15px 35px rgba(0,0,0,.25);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body {
@@ -37,25 +46,33 @@ body {
 }
 
 /* Section-Divider */
-
-/* ===================================
-   SECTION DIVIDER SECTION
-=================================== */
+/* =================================== SECTION DIVIDER SECTION =================================== */
 .section-divider{
-    height: 120px;
-
+    height: 90px;
     background: linear-gradient(to bottom, #000, #003408);
 }
 
+
+/*================================ HEADER ================================*/
 /* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
 .header,
 .footer {
+ color: var(--white);
     background: linear-gradient(
         135deg,
         var(--accent-light-green),
         var(--accent-green)
     );
-    color: var(--white);
+    backdrop-filter:blur(10px);
+    box-shadow:var(--shadow);
     width: 100%;
     z-index: 1000;
 }
@@ -69,15 +86,6 @@ body {
 .nav-menu a,
 .cta-button {
     transition: all 0.3s ease-in-out;
-}
-
-/* Header */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 1rem 0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer */
@@ -233,8 +241,9 @@ body {
     font-weight: 500;
 }
 
-.nav-menu a:hover {
-    color: var(--accent-red);
+.nav-menu a:hover
+.nav-menu a.active {
+    color: var(--accent-gold);
 }
 
 /* Cart Button */
@@ -323,11 +332,9 @@ body {
     text-align: center;
 }
 
-/* Profile */
 
-/* ===================================
-   PROFILE SECTION
-=================================== */
+/* =================================== PROFILE SECTION =================================== */
+/* Profile */
 .profile {
     padding-top: 4rem;
     min-height: 80vh;
@@ -420,9 +427,7 @@ body {
 }
 /* Gallery */
 
-/* ===================================
-   GALLERY SECTION
-=================================== */
+/* =================================== GALLERY SECTION =================================== */
 
 .gallery-section {
     padding: 5rem 1rem;
@@ -535,6 +540,7 @@ body {
     grid-column: span 4;
     min-height: 220px;
 }
+
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -1127,6 +1133,7 @@ body {
     color: #9acd32;
 }
 
+/*============================== SOCIAL LINKS ===============================*/
 /*Social Media*/
 .social-section {
     padding: 3rem 0;
@@ -1146,234 +1153,112 @@ body {
     text-decoration: none;
     font-weight: 700;
 }
-/*==============================
-SOCIAL LINKS
-===============================*/
 
 .footer-social{
-
     text-align:center;
-
     margin-top:2rem;
-
 }
 
 .footer-social h3{
-
     color:#f6c342;
-
     margin-bottom:1rem;
-
     font-size:1.6rem;
-
 }
 
 .social-links{
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     flex-wrap:wrap;
-
     gap:1rem;
-
 }
 
 .social{
-
     display:flex;
-
     align-items:center;
-
     gap:.6rem;
-
     padding:.9rem 1.4rem;
-
     border-radius:40px;
-
     text-decoration:none;
-
     color:#fff;
-
     font-weight:600;
-
     transition:.3s;
-
 }
 
 .facebook{
-
     background:#1877F2;
-
 }
 
 .instagram{
-
     background:linear-gradient(
         45deg,
         #833AB4,
         #E1306C,
         #FCAF45
     );
-
 }
 
 .tiktok{
-
     background:#000;
-
     border:1px solid #ffffff30;
-
 }
 
 .email{
-
     background:#0d5f20;
-
 }
 
 .social:hover{
-
     transform:translateY(-5px);
-
     box-shadow:0 8px 20px rgba(0,0,0,.35);
-
 }
 
 
-/*==============================
-WHATSAPP FLOAT BUTTON
-===============================*/
+/*============================== WHATSAPP FLOAT BUTTON ===============================*/
 
 .whatsapp-float{
-
     position:fixed;
-
     right:25px;
-
     bottom:25px;
-
     width:65px;
-
     height:65px;
-
     border-radius:50%;
-
     background:#25D366;
-
     color:#fff;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     text-decoration:none;
-
     font-size:2rem;
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,.35);
-
+    box-shadow: 0 10px 25px rgba(0,0,0,.35);
     z-index:9999;
-
     transition:.3s;
-
 }
 
 .whatsapp-float:hover{
-
     transform:scale(1.12);
-
     background:#1ebe5d;
-
 }
 
 .whatsapp-float::before{
-
     content:"Chat With Us";
-
     position:absolute;
-
     right:80px;
-
     background:#003408;
-
     color:white;
-
     padding:.7rem 1rem;
-
     border-radius:8px;
-
     white-space:nowrap;
-
     opacity:0;
-
     visibility:hidden;
-
     transition:.3s;
-
     font-size:.9rem;
-
     font-weight:600;
-
 }
 
 .whatsapp-float:hover::before{
-
     opacity:1;
-
     visibility:visible;
-
 }
-
-
-/*==============================
-MOBILE
-===============================*/
-
-@media(max-width:768px){
-
-    .social-links{
-
-        flex-direction:column;
-
-    }
-
-    .social{
-
-        width:240px;
-
-        justify-content:center;
-
-    }
-
-    .whatsapp-float{
-
-        width:60px;
-
-        height:60px;
-
-        right:18px;
-
-        bottom:18px;
-
-        font-size:1.8rem;
-
-    }
-
-    .whatsapp-float::before{
-
-        display:none;
-
-    }
-
-}
-
 
 /* Media */
 @media (max-width:768px)

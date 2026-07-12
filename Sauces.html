@@ -1,2544 +1,1444 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
+            <meta name="description" 
+            content="Piquant Chilli Sauce offers handcrafted premium chilli sauces made in South Africa. Explore Pineapple Habanero, BBQ Sticky Wings, Spring Cayenne and Hot Honey Range.">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Piquant Chilli Sauce | Crafted Heat, Curated Taste</title>
 
-    <title>Piquant | Signature Sauce Collection</title>
+            <link rel="icon" href="Images/Fav Logo.jpg" type="image/jpeg">
+            <link rel="stylesheet" href="Sauces.css">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-    <meta name="description"
-        content="Explore Piquant's premium South African chilli sauces including BBQ Sticky Wings, Pineapple Habanero, Spring Cayenne and Hot Honey Range.">
-
-    <link rel="stylesheet" href="sauce.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-</head>
+    </head>
 
 <body>
 
-<!-- ===========================
-HEADER
-=========================== -->
-
-<header class="header" id="main-header">
-
-    <div class="container">
-
-        <a href="index.html" class="logo">
-
-            <img src="Images/logo.png" alt="Piquant Logo">
-
-        </a>
-
-        <nav class="navigation">
-
-            <ul>
-
-                <li><a href="index.html">Home</a></li>
-
-                <li><a href="sauces.html" class="active">Sauces</a></li>
-
-                <li><a href="gallery.html">Gallery</a></li>
-
-                <li><a href="news.html">News</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
-    </div>
-
-</header>
-
-<!-- ===========================
-HERO
-=========================== -->
-
-<section class="sauce-hero">
-
-    <div class="hero-overlay">
-
+    <!-- =========================== HEADER ========================== -->
+    <header class="header" id="main-header">
         <div class="container">
+                    <nav class="nav">
+                        <div class="logo-container">
+                            <a href="index.html" class="logo">
+                                <img src="Images/Logo.png" alt="Piquant Chilli Sauce Logo">
+                            </a>
+                            <span class="logo">Piquant Chilli Sauce</span>
+                        </div>
 
-            <span class="hero-tag">
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Sauces.html">Sauces</a></li>
+                            <li><a href="Catering.html">Catering</a></li>
+                            <li><a href="Merch.html">Merch</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
 
-                PREMIUM SOUTH AFRICAN CHILLI SAUCES
+                        <a href="Cart.html" class="cta-button">Cart</a>
 
-            </span>
+                        <button id="header-toggle" class="header-toggle" aria-label="Menu">
+                            ☰
+                        </button>
+                    </nav>
+                </div>
+    </header>
 
-            <h1>
+    <!-- =========================== PROFILE =========================== -->
 
-                Explore Our Signature Collection
+    <section class="sauce-profile">
+        <div class="profile-overlay">
+            <div class="container">
+                <span class="profile-tag">
+                    PREMIUM SOUTH AFRICAN CHILLI SAUCES
+                </span>
 
-            </h1>
+                <h1>
+                    Explore Our Signature Collection
+                </h1>
 
-            <p>
+                <p>
+                    Crafted from fresh ingredients and inspired by authentic South African flavours, every bottle is made to transform ordinary meals into unforgettable experiences.
+                </p>
 
-                Crafted from fresh ingredients and inspired by authentic South African flavours,
-                every bottle is made to transform ordinary meals into unforgettable experiences.
+                <div class="profile-buttons">
+                    <a href="#products" class="btn-primary">
+                        Explore Sauces
+                    </a>
 
-            </p>
+                    <a href="#comparison" class="btn-secondary">
+                        Compare Flavours
 
-            <div class="hero-buttons">
-
-                <a href="#products" class="btn-primary">
-
-                    Explore Sauces
-
-                </a>
-
-                <a href="#comparison" class="btn-secondary">
-
-                    Compare Flavours
-
-                </a>
-
+                    </a>
+                </div>
             </div>
-
         </div>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-QUICK NAVIGATION
-=========================== -->
-
-<section class="quick-nav">
-
-    <div class="container">
-
-        <h2>
-
-            Choose Your Favourite
-
-        </h2>
-
-        <div class="quick-nav-grid">
-
-            <a href="#bbq" class="quick-card">
-
-                <img src="Images/bbq-bottle.png"
-                    alt="BBQ Sticky Wings">
-
-                <h3>BBQ Sticky Wings</h3>
-
-                <p>Sweet • Smoky • Sticky</p>
-
-            </a>
-
-            <a href="#pineapple" class="quick-card">
-
-                <img src="Images/pineapple-bottle.png"
-                    alt="Pineapple Habanero">
-
-                <h3>Pineapple Habanero</h3>
-
-                <p>Sweet • Fruity • Mild Heat</p>
-
-            </a>
-
-            <a href="#spring" class="quick-card">
-
-                <img src="Images/spring-bottle.png"
-                    alt="Spring Cayenne">
-
-                <h3>Spring Cayenne</h3>
-
-                <p>Fresh • Herbaceous • Medium</p>
-
-            </a>
-
-            <a href="#hothoney" class="quick-card">
-
-                <img src="Images/hot-honey-bottle.png"
-                    alt="Hot Honey Range">
-
-                <h3>Hot Honey Range</h3>
-
-                <p>Sweet • Creamy • Spicy</p>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-FEATURED PRODUCTS
-=========================== -->
-
-<section class="featured-products" id="products">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span>OUR COLLECTION</span>
-
-            <h2>
-
-                Premium Sauce Selection
-
-            </h2>
-
-            <p>
-
-                Four distinctive flavours crafted for every meal and every occasion.
-
-            </p>
-
-        </div>
-
-        <div class="product-grid">
-
-            <!-- BBQ -->
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <img src="Images/bbq-bottle.png"
-                        alt="BBQ Sticky Wings">
-
-                </div>
-
-                <div class="product-content">
-
-                    <h3>BBQ Sticky Wings</h3>
-
-                    <p class="tagline">
-
-                        Sweet • Smoky • Sticky
-
-                    </p>
-
-                    <p>
-
-                        Rich smoky BBQ sauce finished with honey and
-                        a gentle chilli kick.
-
-                    </p>
-
-                    <div class="card-footer">
-
-                        <span>
-
-                            250ml
-
-                        </span>
-
-                        <strong>
-
-                            R50.00
-
-                        </strong>
-
-                    </div>
-
-                    <a href="#bbq"
-                        class="product-button">
-
-                        View Details
-
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!-- Pineapple -->
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <img src="Images/pineapple-bottle.png"
-                        alt="Pineapple Habanero">
-
-                </div>
-
-                <div class="product-content">
-
-                    <h3>Pineapple Habanero</h3>
-
-                    <p class="tagline">
-
-                        Tropical • Fruity • Zesty
-
-                    </p>
-
-                    <p>
-
-                        Pineapple sweetness balanced with
-                        vibrant habanero heat.
-
-                    </p>
-
-                    <div class="card-footer">
-
-                        <span>
-
-                            250ml
-
-                        </span>
-
-                        <strong>
-
-                            R50.00
-
-                        </strong>
-
-                    </div>
-
-                    <a href="#pineapple"
-                        class="product-button">
-
-                        View Details
-
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!-- Spring -->
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <img src="Images/spring-bottle.png"
-                        alt="Spring Cayenne">
-
-                </div>
-
-                <div class="product-content">
-
-                    <h3>Spring Cayenne</h3>
-
-                    <p class="tagline">
-
-                        Fresh • Herbal • Vibrant
-
-                    </p>
-
-                    <p>
-
-                        Bright herbs blended with cayenne for
-                        fresh everyday flavour.
-
-                    </p>
-
-                    <div class="card-footer">
-
-                        <span>
-
-                            250ml
-
-                        </span>
-
-                        <strong>
-
-                            R50.00
-
-                        </strong>
-
-                    </div>
-
-                    <a href="#spring"
-                        class="product-button">
-
-                        View Details
-
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!-- Hot Honey -->
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <img src="Images/hot-honey-bottle.png"
-                        alt="Hot Honey Range">
-
-                </div>
-
-                <div class="product-content">
-
-                    <h3>Hot Honey Range</h3>
-
-                    <p class="tagline">
-
-                        Sweet • Creamy • Bold
-
-                    </p>
-
-                    <p>
-
-                        Smooth honey richness with a delicious
-                        chilli finish.
-
-                    </p>
-
-                    <div class="card-footer">
-
-                        <span>
-
-                            250ml
-
-                        </span>
-
-                        <strong>
-
-                            R50.00
-
-                        </strong>
-
-                    </div>
-
-                    <a href="#hothoney"
-                        class="product-button">
-
-                        View Details
-
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================
-INDIVIDUAL PRODUCT SECTIONS START HERE
-=================================== -->
-
-<section id="bbq" class="sauce-details">
-
-    <!-- BBQ Sticky Wings Section -->
-
-</section>
-
-<section id="pineapple" class="sauce-details">
-
-    <!-- Pineapple Habanero Section -->
-
-</section>
-
-<section id="spring" class="sauce-details">
-
-    <!-- Spring Cayenne Section -->
-
-</section>
-
-<section id="hothoney" class="sauce-details">
-
-    <!-- Hot Honey Range Section -->
-
     </section>
 
-<!-- ===================================================
-BBQ STICKY WINGS
-=================================================== -->
+    <!-- =========================== QUICK NAVIGATION =========================== -->
 
-<section id="bbq" class="sauce-showcase">
+    <section class="quick-nav">
+        <div class="container">
+            <h2>
+                Choose Your Favourite
+            </h2>
+            <div class="quick-nav-grid">
+                <a href="#bbq" class="quick-card">
+                    <img src="Images/BBQ-Sticky-Wings.png" alt="BBQ Sticky Wings">
+                    <h3>BBQ Sticky Wings</h3>
+                    <p>Sweet • Smoky • Sticky</p>
+                </a>
 
-    <div class="container">
+                <a href="#pineapple" class="quick-card">
+                    <img src="Images/Pineapple-Habanero.png" alt="Pineapple Habanero">
+                    <h3>Pineapple Habanero</h3>
+                    <p>Sweet • Fruity • Mild Heat</p>
+                </a>
 
-        <div class="sauce-layout">
+                <a href="#spring" class="quick-card">
+                    <img src="Images/Spring-Cayenne.png" alt="Spring Cayenne">
+                    <h3>Spring Cayenne</h3>
+                    <p>Fresh • Herbaceous • Medium</p>
+                </a>
 
-            <!-- Product Image -->
-
-            <div class="sauce-gallery">
-
-                <div class="main-image">
-
-                    <img src="Images/bbq-bottle.png"
-                        alt="BBQ Sticky Wings Bottle">
-
-                </div>
-
-                <div class="thumbnail-gallery">
-
-                    <img src="Images/bbq-bottle.png"
-                        alt="Bottle Front">
-
-                    <img src="Images/bbq-label.png"
-                        alt="Nutrition Label">
-
-                    <img src="Images/bbq-food.jpg"
-                        alt="Serving Suggestion">
-
-                </div>
-
+                <a href="#hothoney" class="quick-card">
+                    <img src="Images/Hot-Honey-Range.png" alt="Hot Honey Range">
+                    <h3>Hot Honey Range</h3>
+                    <p>Sweet • Creamy • Spicy</p>
+                </a>
             </div>
+        </div>
+    </section>
 
-            <!-- Product Information -->
+    <!-- =========================== FEATURED PRODUCTS ========================== -->
 
-            <div class="sauce-information">
-
-                <span class="category">
-
-                    Signature Collection
-
-                </span>
-
+    <section class="featured-products" id="products">
+        <div class="container">
+            <div class="section-heading">
+                <span>OUR COLLECTION</span>
                 <h2>
-
-                    BBQ Sticky Wings
-
+                    Premium Sauce Selection
                 </h2>
-
-                <h4>
-
-                    Sweet • Smoky • Sticky
-
-                </h4>
-
                 <p>
-
-                    BBQ Sticky Wings is crafted for lovers of bold
-                    smoky flavour with a balanced chilli finish.
-                    Combining premium spices, natural sweetness and
-                    rich BBQ character, it delivers an unforgettable
-                    taste experience perfect for braais, burgers,
-                    grilled chicken and wings.
-
+                    Four distinctive flavours crafted for every meal and every occasion.
                 </p>
-
-                <div class="product-meta">
-
-                    <div>
-
-                        <strong>Volume</strong>
-
-                        <span>250ml</span>
-
+            </div>
+            <div class="product-grid">
+                <!-- BBQ -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="Images/BBQ-Sticky-Wings.png" alt="BBQ Sticky Wings">
                     </div>
-
-                    <div>
-
-                        <strong>Price</strong>
-
-                        <span>R50.00</span>
-
+                    <div class="product-content">
+                        <h3>BBQ Sticky Wings</h3>
+                        <p class="tagline">
+                            Sweet • Smoky • Sticky
+                        </p>
+                        <p>
+                            Rich smoky BBQ sauce finished with honey and a gentle chilli kick.
+                        </p>
+                        <div class="card-footer">
+                            <span>
+                                125ml
+                            </span>
+                            <strong>
+                                R35.00
+                            </strong>
+                        </div>
+                        <a href="#bbq" class="product-button">
+                            View Details
+                        </a>
                     </div>
+                </article>
 
-                    <div>
-
-                        <strong>Heat Level</strong>
-
-                        <span>
-
-                            🌶🌶🌶◯◯
-
-                        </span>
-
+                <!-- Pineapple -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Pineapple-Habanero.png" alt="Pineapple Habanero">
                     </div>
+                    <div class="product-content">
+                        <h3>Pineapple Habanero</h3>
+                        <p class="tagline">
+                            Tropical • Fruity • Zesty
+                        </p>
+                        <p>
+                            Pineapple sweetness balanced with vibrant habanero heat.
+                        </p>
+                        <div class="card-footer">
+                            <span>
+                                125ml
+                            </span>
+                            <strong>
+                                R50.00
+                            </strong>
+                        </div>
+                        <a href="#pineapple" class="product-button">
+                            View Details
+                        </a>
+                    </div>
+                </article>
 
+                <!-- Spring -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Spring-Cayenne.png" alt="Spring Cayenne">
+                    </div>
+                    <div class="product-content">
+                        <h3>Spring Cayenne</h3>
+                        <p class="tagline">
+                            Fresh • Herbal • Vibrant
+                        </p>
+                        <p>
+
+                            Bright herbs blended with cayenne for fresh everyday flavour.
+                        </p>
+                        <div class="card-footer">
+                            <span>
+                                125ml
+                            </span>
+                            <strong>
+                                R35.00
+                            </strong>
+                        </div>
+                        <a href="#spring" class="product-button">
+                            View Details
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Hot Honey -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Hot-Honey-Range.png" alt="Hot Honey Range">
+                    </div>
+                    <div class="product-content">
+                        <h3>Hot Honey Range</h3>
+                        <p class="tagline">
+                            Sweet • Creamy • Bold
+                        </p>
+                        <p>
+                            Smooth honey richness with a delicious chilli finish.
+                        </p>
+                        <div class="card-footer">
+                            <span>
+                                125ml
+                            </span>
+                            <strong>
+                                R35.00
+                            </strong>
+                        </div>
+                        <a href="#hothoney" class="product-button">
+                            View Details
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== INDIVIDUAL PRODUCT SECTIONS START HERE =================================== -->
+
+    <section id="bbq" class="sauce-details">
+        <!-- BBQ Sticky Wings Section -->
+    </section>
+
+    <section id="pineapple" class="sauce-details">
+        <!-- Pineapple Habanero Section -->
+    </section>
+
+    <section id="spring" class="sauce-details">
+        <!-- Spring Cayenne Section -->
+    </section>
+
+    <section id="hothoney" class="sauce-details">
+        <!-- Hot Honey Range Section -->
+    </section>
+
+    <!-- =================================================== BBQ STICKY WINGS =================================================== -->
+
+    <section id="bbq" class="sauce-showcase">
+        <div class="container">
+            <div class="sauce-layout">
+                <!-- Product Image -->
+                <div class="sauce-gallery">
+                    <div class="main-image">
+                        <img src="Images/BBQ-Sticky-Wings.png" alt="BBQ Sticky Wings Bottle">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="Images/BBQ-Sticky-Wings.png" alt="Bottle Front">
+                        <img src="Images/bbq-label.png" alt="Nutrition Label">
+                        <img src="Images/bbq-food.jpg" alt="Serving Suggestion">
+                    </div>
                 </div>
 
-                <div class="button-group">
+                <!-- Product Information -->
+                <div class="sauce-information">
+                    <span class="category">
+                        Signature Collection
+                    </span>
+                    <h2>
+                        BBQ Sticky Wings
+                    </h2>
+                    <h4>
+                        Sweet • Smoky • Sticky
+                    </h4>
+                    <p>
+                        BBQ Sticky Wings is crafted for lovers of bold smoky flavour with a balanced chilli finish.
+                        Combining premium spices, natural sweetness andrich BBQ character, it delivers an unforgettable
+                        taste experience perfect for braais, burgers, grilled chicken and wings.
+                    </p>
 
-                    <a href="#"
+                    <div class="product-meta">
+                        <div>
+                            <strong>Volume</strong>
+                            <span>125ml</span>
+                        </div>
+                        <div>
+                            <strong>Price</strong>
+                            <span>R35.00</span>
 
-                        class="primary-btn">
+                        </div>
+                        <div>
+                            <strong>Heat Level</strong>
+                            <span>
+                                🌶🌶🌶◯◯
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <a href="#" class="primary-btn">
+                            Buy Now
+                        </a>
 
-                        Buy Now
+                        <a href="https://wa.me/27721234567?text=Hello%20Piquant,%20I'd%20like%20to%20enquire%20about%20BBQ%20Sticky%20Wings."
+                            target="_blank" class="secondary-btn">
 
-                    </a>
-
-                    <a href="https://wa.me/27721234567?text=Hello%20Piquant,%20I'd%20like%20to%20enquire%20about%20BBQ%20Sticky%20Wings."
-
-                        target="_blank"
-
-                        class="secondary-btn">
-
-                        WhatsApp Enquiry
-
-                    </a>
-
+                            WhatsApp Enquiry
+                        </a>
+                    </div>
                 </div>
-
             </div>
-
         </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-NUTRITION
-=================================================== -->
-
-<section class="nutrition-section">
-
-    <div class="container">
-
-        <h2>
-
-            Nutritional Information
-
-        </h2>
-
-        <p>
-
-            Average nutritional values per 100 ml.
-
-        </p>
-
-        <table class="nutrition-table">
-
-            <thead>
-
-                <tr>
-
-                    <th>Nutrient</th>
-
-                    <th>Per 100 ml</th>
-
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                <tr>
-
-                    <td>Energy</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Protein</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Carbohydrates</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>of which Sugars</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Total Fat</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Saturated Fat</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Dietary Fibre</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Sodium</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-INGREDIENTS
-=================================================== -->
-
-<section class="ingredients-section">
-
-    <div class="container">
-
-        <h2>
-
-            Ingredients
-
-        </h2>
-
-        <div class="ingredient-grid">
-
-            <span>Tomato</span>
-
-            <span>Honey</span>
-
-            <span>Brown Sugar</span>
-
-            <span>Garlic</span>
-
-            <span>Paprika</span>
-
-            <span>Vinegar</span>
-
-            <span>Salt</span>
-
-            <span>Natural Herbs</span>
-
-            <span>Selected Chilli Peppers</span>
-
-            <span>Spices</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-SERVING SUGGESTIONS
-=================================================== -->
-
-<section class="serving-section">
-
-    <div class="container">
-
-        <h2>
-
-            Perfect With
-
-        </h2>
-
-        <div class="serving-grid">
-
-            <div class="serving-card">
-
-                🍗
-
-                <h4>Chicken Wings</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🍔
-
-                <h4>Burgers</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🥩
-
-                <h4>Steak</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🍟
-
-                <h4>Fries</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🍕
-
-                <h4>Pizza</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🔥
-
-                <h4>Braai Meat</h4>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-ALLERGENS
-=================================================== -->
-
-<section class="allergen-section">
-
-    <div class="container">
-
-        <h2>
-
-            Allergen Information
-
-        </h2>
-
-        <div class="warning-card">
-
+    </section>
+
+    <!-- =================================================== NUTRITION ================================================== -->
+
+    <section class="nutrition-section">
+        <div class="container">
+            <h2>
+                Nutritional Information
+            </h2>
             <p>
-
-                Please refer to the product label for the latest allergen information. This product may contain or be manufactured in a facility that processes ingredients such as soy, gluten, milk, egg, mustard, sesame, tree nuts, peanuts, or sulphites.
-
+                Average nutritional values per 100 ml.
             </p>
 
+            <table class="nutrition-table">
+                <thead>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Per 100 ml</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Energy</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Protein</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Carbohydrates</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>of which Sugars</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Total Fat</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturated Fat</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dietary Fibre</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sodium</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                </tbody>
+            </table>
         </div>
+    </section>
 
-    </div>
+    <!-- =================================================== INGREDIENTS =================================================== -->
 
-</section>
-
-<!-- ===================================================
-STORAGE
-=================================================== -->
-
-<section class="storage-section">
-
-    <div class="container">
-
-        <h2>
-
-            Storage Instructions
-
-        </h2>
-
-        <div class="storage-grid">
-
-            <div class="storage-card">
-
-                ❄
-
-                <h4>Refrigerate After Opening</h4>
-
+    <section class="ingredients-section">
+        <div class="container">
+            <h2>
+                Ingredients
+            </h2>
+            <div class="ingredient-grid">
+                <span>Tomato</span>
+                <span>Honey</span>
+                <span>Brown Sugar</span>
+                <span>Garlic</span>
+                <span>Paprika</span>
+                <span>Vinegar</span>
+                <span>Salt</span>
+                <span>Natural Herbs</span>
+                <span>Selected Chilli Peppers</span>
+                <span>Spices</span>
             </div>
-
-            <div class="storage-card">
-
-                🌡
-
-                <h4>Store In A Cool Dry Place</h4>
-
-            </div>
-
-            <div class="storage-card">
-
-                🗓
-
-                <h4>Best Before: See Bottle</h4>
-
-            </div>
-
         </div>
+    </section>
 
-    </div>
+    <!-- =================================================== SERVING SUGGESTIONS =================================================== -->
 
-</section>
+    <section class="serving-section">
+        <div class="container">
+            <h2>
+                Perfect With
+            </h2>
+            <div class="serving-grid">
+                <div class="serving-card">
+                    🍗
+                    <h4>Chicken Wings</h4>
+                </div>
+                <div class="serving-card">
+                    🍔
+                    <h4>Burgers</h4>
+                </div>
+                <div class="serving-card">
+                    🥩
+                    <h4>Steak</h4>
+                </div>
+                <div class="serving-card">
+                    🍟
+                    <h4>Fries</h4>
+                </div>
+                <div class="serving-card">
+                    🍕
+                    <h4>Pizza</h4>
+                </div>
+                <div class="serving-card">
+                    🔥
+                    <h4>Braai Meat</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ===================================================
-CUSTOMER REVIEW
-=================================================== -->
+    <!-- =================================================== ALLERGENS =================================================== -->
 
-<section class="review-section">
+    <section class="allergen-section">
+        <div class="container">
+            <h2>
+                Allergen Information
+            </h2>
+            <div class="warning-card">
+                <p>
+                    Please refer to the product label for the latest allergen information. This product may contain or be manufactured in a facility that processes ingredients such as soy, gluten, milk, egg, mustard, sesame, tree nuts, peanuts, or sulphites.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <div class="container">
+    <!-- =================================================== STORAGE =================================================== -->
 
-        <blockquote>
+    <section class="storage-section">
+        <div class="container">
+            <h2>
+                Storage Instructions
+            </h2>
+            <div class="storage-grid">
+                <div class="storage-card">
+                    ❄
+                    <h4>Refrigerate After Opening</h4>
+                </div>
+                <div class="storage-card">
+                    🌡
+                    <h4>Store In A Cool Dry Place</h4>
+                </div>
+                <div class="storage-card">
+                    🗓
+                    <h4>Best Before: See Bottle</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            "A beautifully balanced BBQ sauce with just the right amount of sweetness and a gentle chilli finish. Fantastic on wings and burgers."
+    <!-- =================================================== CUSTOMER REVIEW =================================================== -->
 
-        </blockquote>
+    <section class="review-section">
+        <div class="container">
+            <blockquote>
+                "A beautifully balanced BBQ sauce with just the right amount of sweetness and a gentle chilli finish. Fantastic on wings and burgers."
+            </blockquote>
+            <cite>
+                ★★★★★
+                Customer Favourite
+            </cite>
+        </div>
+    </section>
 
-        <cite>
+    <!-- =================================================== PINEAPPLE HABANERO =================================================== -->
 
-            ★★★★★
-            Customer Favourite
+    <section id="pineapple" class="sauce-showcase">
+        <div class="container">
+            <div class="sauce-layout">
 
-        </cite>
+                <!-- Product Images -->
+                <div class="sauce-gallery">
+                    <div class="main-image">
+                        <img src="Images/Pineapple-Habanero.png" alt="Piquant Pineapple Habanero">
+                    </div>
 
-    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="Images/Pineapple-Habanero.png" alt="Bottle Front">
 
-</section>
+                        <img src="Images/Pineapple-Habanero-Label.png" alt="Nutrition Label">
+
+                        <img src="Images/Pineapple-Habanero-Food.png" alt="Serving Suggestion">
+
+                    </div>
+
+                </div>
+
+                <!-- Product Information -->
+                <div class="sauce-information">
+                    <span class="category">
+                        Signature Collection
+                    </span>
+                    <h2>
+                        Pineapple Habanero
+                    </h2>
+
+                    <h4>
+                        Tropical • Fruity • Fiery
+                    </h4>
+
+                    <p>
+                        Pineapple Habanero perfectly combines juicy pineapple sweetness with the unmistakable heat of
+                        habanero chillies. This vibrant sauce delivers a delicious balance of sweet fruit flavour and bold
+                        spice, making it ideal for grilling, dipping, glazing and marinating.
+                    </p>
+
+                    <div class="product-meta">
+                        <div>
+                            <strong>Volume</strong>
+                            <span>125 ml</span>
+                        </div>
+
+                        <div>
+                            <strong>Price</strong>
+                            <span>R35.00</span>
+                        </div>
+
+                        <div>
+                            <strong>Heat Level</strong>
+                            <span>
+                                🌶🌶🌶🌶◯
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <a href="#" class="primary-btn">
+                            Buy Now
+                        </a>
+
+                        <a href="https://wa.me/27693237625?text=Hello%20Piquant,%20I%20would%20like%20to%20know%20more%20about%20the%20Pineapple%20Habanero%20Sauce."
+                            target="_blank" class="secondary-btn">
+
+                            WhatsApp Enquiry
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================== NUTRITION INFORMATION =================================================== -->
+
+    <section class="nutrition-section">
+        <div class="container">
+            <h2>
+                Nutritional Information
+            </h2>
+            <p>
+                Average nutritional values per 100 ml.
+            </p>
+
+            <table class="nutrition-table">
+                <thead>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Per 100 ml</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Energy</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Protein</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Carbohydrates</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>of which Sugars</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Total Fat</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturated Fat</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dietary Fibre</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sodium</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- =================================================== INGREDIENTS =================================================== -->
+
+    <section class="ingredients-section">
+        <div class="container">
+            <h2>
+                Ingredients
+            </h2>
+
+            <div class="ingredient-grid">
+                <span>Pineapple</span>
+                <span>Habanero Chillies</span>
+                <span>Brown Sugar</span>
+                <span>Garlic</span>
+                <span>Vinegar</span>
+                <span>Salt</span>
+                <span>Lemon Juice</span>
+                <span>Natural Herbs</span>
+                <span>Selected Spices</span>
+                <span>Water</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================== SERVING SUGGESTIONS =================================================== -->
+
+    <section class="serving-section">
+        <div class="container">
+            <h2>
+                Perfect With
+            </h2>
+
+            <div class="serving-grid">
+                <div class="serving-card">
+                    🍗
+                    <h4>Grilled Chicken</h4>
+                </div>
+
+                <div class="serving-card">
+                    🍤
+                    <h4>Prawns</h4>
+                </div>
+
+                <div class="serving-card">
+                    🥩
+                    <h4>Pork</h4>
+                </div>
+
+                <div class="serving-card">
+                    🌮
+                    <h4>Tacos</h4>
+                </div>
+
+                <div class="serving-card">
+                    🍕
+                    <h4>Pizza</h4>
+                </div>
+
+                <div class="serving-card">
+                    🍍
+                    <h4>Fruit Platters</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================== ALLERGEN INFORMATION =================================================== -->
+
+    <section class="allergen-section">
+        <div class="container">
+            <h2>
+                Allergen Information
+            </h2>
+
+            <div class="warning-card">
+                <p>
+                    Please refer to the product label for the latest allergen information. This product may contain or be manufactured in a facility that processes soy, gluten, milk, egg, mustard, sesame, peanuts, tree nuts, or sulphites.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================== STORAGE INFORMATION =================================================== -->
+
+    <section class="storage-section">
+        <div class="container">
+            <h2>
+                Storage Instructions
+            </h2>
+
+            <div class="storage-grid">
+                <div class="storage-card">
+                    ❄
+                    <h4>Refrigerate After Opening</h4>
+                </div>
+
+                <div class="storage-card">
+                    🌡
+                    <h4>Store In A Cool Dry Place</h4>
+                </div>
+
+                <div class="storage-card">
+                    🗓
+                    <h4>Best Before: See Bottle</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================== CUSTOMER REVIEW =================================================== -->
+
+    <section class="review-section">
+        <div class="container">
+            <blockquote>
+                "The perfect combination of tropical sweetness and habanero heat. Excellent as a glaze, marinade or dipping sauce."
+            </blockquote>
+
+            <cite>
+                ★★★★★
+                Customer Favourite
+            </cite>
+        </div>
+    </section>
+
+
+
+    <!-- =================================================== SPRING CAYENNE =================================================== -->
+
+    <section id="spring" class="sauce-showcase">
+        <div class="container">
+            <div class="sauce-layout">
+
+                <!-- Product Gallery -->
+                <div class="sauce-gallery">
+                    <div class="main-image">
+                        <img src="Images/Spring-Cayenne.png" alt="Spring Cayenne Bottle">
+                    </div>
+
+                    <div class="thumbnail-gallery">
+                        <img src="Images/Spring-Cayenne.png" alt="Bottle Front">
+
+                        <img src="Images/spring-cayenne-label.png" alt="Nutrition Label">
+
+                        <img src="Images/spring-cayenne-food.jpg" alt="Serving Suggestion">
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div class="sauce-information">
+                    <span class="category">
+                        Signature Collection
+                    </span>
+                    <h2>
+                        Spring Cayenne
+                    </h2>
+                    <h4>
+                        Fresh • Zesty • Bold
+                    </h4>
+                    <p>
+                        Spring Cayenne is inspired by the fresh taste of garden herbs and the unmistakable warmth of cayenne chillies. It delivers a clean, vibrant
+                        flavour profile with a satisfying kick that complements grilled meats, vegetables, seafood,
+                        wraps and salads. Perfect for everyday meals and adventurous food lovers.
+                    </p>
+
+                    <div class="product-meta">
+                        <div>
+                            <strong>Volume</strong>
+                            <span>125 ml</span>
+                        </div>
+
+                        <div>
+                            <strong>Price</strong>
+                            <span>R35.00</span>
+                        </div>
+
+                        <div>
+                            <strong>Heat Level</strong>
+                            <span>
+                                🌶🌶🌶🌶◯
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <a href="#" class="primary-btn">
+                            Buy Now
+                        </a>
+
+                        <a href="https://wa.me/27693237625?text=Hello%20Piquant,%20I'd%20like%20to%20enquire%20about%20the%20Spring%20Cayenne%20Sauce."
+                            target="_blank" class="secondary-btn">
+
+                            WhatsApp Enquiry
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ===================================================
-PINEAPPLE HABANERO
-=================================================== -->
+    FLAVOUR PROFILE
+    =================================================== -->
 
-<section id="pineapple" class="sauce-showcase">
+    <section class="flavour-profile">
+        <div class="container">
+            <h2>
+                Flavour Profile
+            </h2>
 
-    <div class="container">
-
-        <div class="sauce-layout">
-
-            <!-- Product Images -->
-
-            <div class="sauce-gallery">
-
-                <div class="main-image">
-
-                    <img src="Images/pineapple-bottle.png"
-                        alt="Piquant Pineapple Habanero">
-
-                </div>
-
-                <div class="thumbnail-gallery">
-
-                    <img src="Images/pineapple-bottle.png"
-                        alt="Bottle Front">
-
-                    <img src="Images/pineapple-label.png"
-                        alt="Nutrition Label">
-
-                    <img src="Images/pineapple-serving.jpg"
-                        alt="Serving Suggestion">
-
-                </div>
-
-            </div>
-
-            <!-- Product Information -->
-
-            <div class="sauce-information">
-
-                <span class="category">
-
-                    Signature Collection
-
-                </span>
-
-                <h2>
-
-                    Pineapple Habanero
-
-                </h2>
-
-                <h4>
-
-                    Tropical • Fruity • Fiery
-
-                </h4>
-
-                <p>
-
-                    Pineapple Habanero perfectly combines juicy
-                    pineapple sweetness with the unmistakable heat of
-                    habanero chillies. This vibrant sauce delivers a
-                    delicious balance of sweet fruit flavour and bold
-                    spice, making it ideal for grilling, dipping,
-                    glazing and marinating.
-
-                </p>
-
-                <div class="product-meta">
-
-                    <div>
-
-                        <strong>Volume</strong>
-
-                        <span>250 ml</span>
-
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <span>Heat</span>
+                    <div class="meter">
+                        <div class="fill heat-4"></div>
                     </div>
-
-                    <div>
-
-                        <strong>Price</strong>
-
-                        <span>R50.00</span>
-
-                    </div>
-
-                    <div>
-
-                        <strong>Heat Level</strong>
-
-                        <span>
-
-                            🌶🌶🌶🌶◯
-
-                        </span>
-
-                    </div>
-
                 </div>
 
-                <div class="button-group">
-
-                    <a href="#"
-
-                        class="primary-btn">
-
-                        Buy Now
-
-                    </a>
-
-                    <a href="https://wa.me/27721234567?text=Hello%20Piquant,%20I%20would%20like%20to%20know%20more%20about%20the%20Pineapple%20Habanero%20Sauce."
-
-                        target="_blank"
-
-                        class="secondary-btn">
-
-                        WhatsApp Enquiry
-
-                    </a>
-
+                <div class="profile-item">
+                    <span>Freshness</span>
+                    <div class="meter">
+                        <div class="fill freshness-5"></div>
+                    </div>
                 </div>
 
-            </div>
+                <div class="profile-item">
+                    <span>Tanginess</span>
+                    <div class="meter">
+                        <div class="fill tangy-4"></div>
+                    </div>
+                </div>
 
+                <div class="profile-item">
+                    <span>Sweetness</span>
+                    <div class="meter">
+                        <div class="fill sweet-2"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-NUTRITION INFORMATION
-=================================================== -->
-
-<section class="nutrition-section">
-
-    <div class="container">
-
-        <h2>
-
-            Nutritional Information
-
-        </h2>
-
-        <p>
-
-            Average nutritional values per 100 ml.
-
-        </p>
-
-        <table class="nutrition-table">
-
-            <thead>
-
-                <tr>
-
-                    <th>Nutrient</th>
-
-                    <th>Per 100 ml</th>
-
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                <tr>
-
-                    <td>Energy</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Protein</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Carbohydrates</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>of which Sugars</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Total Fat</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Saturated Fat</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Dietary Fibre</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Sodium</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-INGREDIENTS
-=================================================== -->
-
-<section class="ingredients-section">
-
-    <div class="container">
-
-        <h2>
-
-            Ingredients
-
-        </h2>
-
-        <div class="ingredient-grid">
-
-            <span>Pineapple</span>
-
-            <span>Habanero Chillies</span>
-
-            <span>Brown Sugar</span>
-
-            <span>Garlic</span>
-
-            <span>Vinegar</span>
-
-            <span>Salt</span>
-
-            <span>Lemon Juice</span>
-
-            <span>Natural Herbs</span>
-
-            <span>Selected Spices</span>
-
-            <span>Water</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-SERVING SUGGESTIONS
-=================================================== -->
-
-<section class="serving-section">
-
-    <div class="container">
-
-        <h2>
-
-            Perfect With
-
-        </h2>
-
-        <div class="serving-grid">
-
-            <div class="serving-card">
-
-                🍗
-
-                <h4>Grilled Chicken</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🍤
-
-                <h4>Prawns</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🥩
-
-                <h4>Pork</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🌮
-
-                <h4>Tacos</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🍕
-
-                <h4>Pizza</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🍍
-
-                <h4>Fruit Platters</h4>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-ALLERGEN INFORMATION
-=================================================== -->
-
-<section class="allergen-section">
-
-    <div class="container">
-
-        <h2>
-
-            Allergen Information
-
-        </h2>
-
-        <div class="warning-card">
-
+    </section>
+
+    <!-- =================================================== NUTRITION =================================================== -->
+
+    <section class="nutrition-section">
+        <div class="container">
+            <h2>
+                Nutritional Information
+            </h2>
             <p>
-
-                Please refer to the product label for the latest allergen information. This product may contain or be manufactured in a facility that processes soy, gluten, milk, egg, mustard, sesame, peanuts, tree nuts, or sulphites.
-
+                Average nutritional values per 100 ml.
             </p>
+            <table class="nutrition-table">
+                <thead>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Per 100 ml</th>
+                    </tr>
+                </thead>
 
+                <tbody>
+                    <tr>
+                        <td>Energy</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Protein</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Carbohydrates</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>of which Sugars</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Total Fat</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturated Fat</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dietary Fibre</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sodium</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                </tbody>
+            </table>
         </div>
+    </section>
 
-    </div>
+    <!-- =================================================== INGREDIENTS =================================================== -->
 
-</section>
+    <section class="ingredients-section">
+        <div class="container">
+            <h2>
+                Ingredients
+            </h2>
 
-<!-- ===================================================
-STORAGE INFORMATION
-=================================================== -->
-
-<section class="storage-section">
-
-    <div class="container">
-
-        <h2>
-
-            Storage Instructions
-
-        </h2>
-
-        <div class="storage-grid">
-
-            <div class="storage-card">
-
-                ❄
-
-                <h4>Refrigerate After Opening</h4>
-
+            <div class="ingredient-grid">
+                <span>Cayenne Chillies</span>
+                <span>Garlic</span>
+                <span>Onion</span>
+                <span>Herbs</span>
+                <span>Vinegar</span>
+                <span>Water</span>
+                <span>Salt</span>
+                <span>Lemon Juice</span>
+                <span>Selected Spices</span>
+                <span>Natural Flavourings</span>
             </div>
-
-            <div class="storage-card">
-
-                🌡
-
-                <h4>Store In A Cool Dry Place</h4>
-
-            </div>
-
-            <div class="storage-card">
-
-                🗓
-
-                <h4>Best Before: See Bottle</h4>
-
-            </div>
-
         </div>
+    </section>
 
-    </div>
+    <!-- =================================================== SERVING SUGGESTIONS =================================================== -->
 
-</section>
-
-<!-- ===================================================
-CUSTOMER REVIEW
-=================================================== -->
-
-<section class="review-section">
-
-    <div class="container">
-
-        <blockquote>
-
-            "The perfect combination of tropical sweetness and
-            habanero heat. Excellent as a glaze, marinade or dipping
-            sauce."
-
-        </blockquote>
-
-        <cite>
-
-            ★★★★★
-
-            Customer Favourite
-
-        </cite>
-
-    </div>
-
-</section>
-
-
-
-    <!-- ===================================================
-SPRING CAYENNE
-=================================================== -->
-
-<section id="spring" class="sauce-showcase">
-
-    <div class="container">
-
-        <div class="sauce-layout">
-
-            <!-- Product Gallery -->
-
-            <div class="sauce-gallery">
-
-                <div class="main-image">
-
-                    <img src="Images/spring-cayenne-bottle.png"
-                        alt="Spring Cayenne Bottle">
-
+    <section class="serving-section">
+        <div class="container">
+            <h2>
+                Best Enjoyed With
+            </h2>
+            <div class="serving-grid">
+                <div class="serving-card">
+                    🥩
+                    <h4>Steak</h4>
                 </div>
 
-                <div class="thumbnail-gallery">
-
-                    <img src="Images/spring-cayenne-bottle.png"
-                        alt="Bottle Front">
-
-                    <img src="Images/spring-cayenne-label.png"
-                        alt="Nutrition Label">
-
-                    <img src="Images/spring-cayenne-food.jpg"
-                        alt="Serving Suggestion">
-
+                <div class="serving-card">
+                    🌭
+                    <h4>Boerewors</h4>
                 </div>
 
+                <div class="serving-card">
+                    🥗
+                    <h4>Fresh Salads</h4>
+                </div>
+
+                <div class="serving-card">
+                    🌮
+                    <h4>Wraps</h4>
+                </div>
+
+                <div class="serving-card">
+                    🐟
+                    <h4>Seafood</h4>
+                </div>
+
+                <div class="serving-card">
+                    🔥
+                    <h4>Braai</h4>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Product Information -->
+    <!-- =================================================== ALLERGEN INFORMATION =================================================== -->
 
-            <div class="sauce-information">
-
-                <span class="category">
-
-                    Signature Collection
-
-                </span>
-
-                <h2>
-
-                    Spring Cayenne
-
-                </h2>
-
-                <h4>
-
-                    Fresh • Zesty • Bold
-
-                </h4>
-
+    <section class="allergen-section">
+        <div class="container">
+            <h2>
+                Allergen Information
+            </h2>
+            <div class="warning-card">
                 <p>
-
-                    Spring Cayenne is inspired by the fresh taste of
-                    garden herbs and the unmistakable warmth of
-                    cayenne chillies. It delivers a clean, vibrant
-                    flavour profile with a satisfying kick that
-                    complements grilled meats, vegetables, seafood,
-                    wraps and salads. Perfect for everyday meals and
-                    adventurous food lovers.
-
+                    Please refer to the product label for the latest allergen information. This product may contain or be manufactured in a facility that also processes soy, milk, gluten, egg, mustard, sesame, peanuts, tree nuts and sulphites.
                 </p>
+            </div>
+        </div>
+    </section>
 
-                <div class="product-meta">
+    <!-- =================================================== STORAGE INFORMATION =================================================== -->
+    <section class="storage-section">
+        <div class="container">
+            <h2>
+                Storage Instructions
+            </h2>
 
-                    <div>
+            <div class="storage-grid">
+                <div class="storage-card">
+                    🌡
+                    <h4>Store In A Cool Dry Place</h4>
+                </div>
 
-                        <strong>Volume</strong>
+                <div class="storage-card">
+                    ❄
+                    <h4>Refrigerate After Opening</h4>
+                </div>
 
-                        <span>250 ml</span>
+                <div class="storage-card">
+                    🗓
+                    <h4>Best Before: See Bottle</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- =================================================== PRODUCT HIGHLIGHTS =================================================== -->
+
+    <section class="product-highlights">
+        <div class="container">
+            <h2>
+                Why You'll Love It
+            </h2>
+            <div class="highlight-grid">
+                <div class="highlight-card">
+                    🌿
+                    <h4>Fresh Flavour</h4>
+                    <p>
+                        Bright herbaceous notes balanced with cayenne heat.
+                    </p>
+                </div>
+                <div class="highlight-card">
+                    🔥
+                    <h4>Medium-High Heat</h4>
+                    <p>
+                        A bold kick without overpowering your meal.
+                    </p>
+                </div>
+                <div class="highlight-card">
+                    🍽
+                    <h4>Versatile</h4>
+                    <p>
+                        Perfect as a marinade, dip, cooking sauce or table condiment.
+                    </p>
+                </div>
+                <div class="highlight-card">
+                    🇿🇦
+                    <h4>Proudly South African</h4>
+                    <p>
+                        Crafted with quality ingredients for authentic local flavour.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================== CUSTOMER REVIEW =================================================== -->
+
+    <section class="review-section">
+        <div class="container">
+            <blockquote>
+                "Fresh, vibrant and packed with flavour. The perfect balance between herbal freshness and chilli heat. A favourite for our weekend braais."
+            </blockquote>
+
+            <cite>
+                ★★★★★
+                Recommended by Piquant Customers
+            </cite>
+        </div>
+    </section>
+
+    <!-- =================================================== HOT HONEY RANGE =================================================== -->
+
+    <section id="hothoney" class="sauce-showcase">
+        <div class="container">
+            <div class="sauce-layout">
+
+                <!-- Product Gallery -->
+                <div class="sauce-gallery">
+                    <div class="main-image">
+                        <img src="Images/Hot-Honey-Range.png" alt="Piquant Hot Honey Range">
                     </div>
 
-                    <div>
+                    <div class="thumbnail-gallery">
+                        <img src="Images/Hot-Honey-Range.png" alt="Bottle Front">
 
-                        <strong>Price</strong>
+                        <img src="Images/hot-honey-label.png" alt="Nutrition Label">
 
-                        <span>R50.00</span>
+                        <img src="Images/hot-honey-food.jpg" alt="Serving Suggestion">
+                    </div>
+                </div>
 
+                <!-- Product Information -->
+                <div class="sauce-information">
+                    <span class="category">
+                        Signature Collection
+                    </span>
+                    <h2>
+                        Hot Honey Range
+                    </h2>
+                    <h4>
+                        Sweet • Smooth • Fiery
+                    </h4>
+                    <p>
+                        Hot Honey Range combines premium honey with carefully selected chillies to create the perfect
+                        balance between sweetness and heat. Whether drizzled over pizza, paired with fried chicken,
+                        glazed onto grilled meats or served with cheese, this versatile sauce delivers a bold flavour
+                        experience that keeps you coming back for more.
+                    </p>
+
+                    <div class="product-meta">
+                        <div>
+                            <strong>Volume</strong>
+                            <span>125 ml</span>
+                        </div>
+
+                        <div>
+                            <strong>Price</strong>
+                            <span>R35.00</span>
+                        </div>
+
+                        <div>
+                            <strong>Heat Level</strong>
+                            <span>
+                                🌶🌶🌶◯◯
+                            </span>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="button-group">
+                        <a href="#"
+                            class="primary-btn">
+                            Buy Now
+                        </a>
 
-                        <strong>Heat Level</strong>
+                        <a href="https://wa.me/27721234567?text=Hello%20Piquant,%20I'd%20like%20to%20know%20more%20about%20the%20Hot%20Honey%20Range."
+                            target="_blank" class="secondary-btn">
 
-                        <span>
+                            WhatsApp Enquiry
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                            🌶🌶🌶🌶◯
+    <!-- =================================================== FLAVOUR PROFILE =================================================== -->
 
-                        </span>
+    <section class="flavour-profile">
+        <div class="container">
+            <h2>
+                Flavour Profile
+            </h2>
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <span>Heat</span>
+                    <div class="meter">
+                        <div class="fill heat-3"></div>
+                    </div>
+                </div>
 
+                <div class="profile-item">
+                    <span>Sweetness</span>
+                    <div class="meter">
+                        <div class="fill sweet-5"></div>
+                    </div>
+                </div>
+
+                <div class="profile-item">
+                    <span>Smokiness</span>
+                    <div class="meter">
+                        <div class="fill smoky-2"></div>
                     </div>
 
                 </div>
 
-                <div class="button-group">
-
-                    <a href="#"
-
-                        class="primary-btn">
-
-                        Buy Now
-
-                    </a>
-
-                    <a href="https://wa.me/27721234567?text=Hello%20Piquant,%20I'd%20like%20to%20enquire%20about%20the%20Spring%20Cayenne%20Sauce."
-
-                        target="_blank"
-
-                        class="secondary-btn">
-
-                        WhatsApp Enquiry
-
-                    </a>
-
+                <div class="profile-item">
+                    <span>Versatility</span>
+                    <div class="meter">
+                        <div class="fill versatile-5"></div>
+                    </div>
                 </div>
-
             </div>
-
         </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-FLAVOUR PROFILE
-=================================================== -->
-
-<section class="flavour-profile">
-
-    <div class="container">
-
-        <h2>
-
-            Flavour Profile
-
-        </h2>
-
-        <div class="profile-grid">
-
-            <div class="profile-item">
-
-                <span>Heat</span>
-
-                <div class="meter">
-
-                    <div class="fill heat-4"></div>
-
-                </div>
-
-            </div>
-
-            <div class="profile-item">
-
-                <span>Freshness</span>
-
-                <div class="meter">
-
-                    <div class="fill freshness-5"></div>
-
-                </div>
-
-            </div>
-
-            <div class="profile-item">
-
-                <span>Tanginess</span>
-
-                <div class="meter">
-
-                    <div class="fill tangy-4"></div>
-
-                </div>
-
-            </div>
-
-            <div class="profile-item">
-
-                <span>Sweetness</span>
-
-                <div class="meter">
-
-                    <div class="fill sweet-2"></div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-NUTRITION
-=================================================== -->
-
-<section class="nutrition-section">
-
-    <div class="container">
-
-        <h2>
-
-            Nutritional Information
-
-        </h2>
-
-        <p>
-
-            Average nutritional values per 100 ml.
-
-        </p>
-
-        <table class="nutrition-table">
-
-            <thead>
-
-                <tr>
-
-                    <th>Nutrient</th>
-
-                    <th>Per 100 ml</th>
-
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                <tr>
-
-                    <td>Energy</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Protein</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Carbohydrates</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>of which Sugars</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Total Fat</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Saturated Fat</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Dietary Fibre</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Sodium</td>
-
-                    <td><!-- Replace with label value --></td>
-
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-INGREDIENTS
-=================================================== -->
-
-<section class="ingredients-section">
-
-    <div class="container">
-
-        <h2>
-
-            Ingredients
-
-        </h2>
-
-        <div class="ingredient-grid">
-
-            <span>Cayenne Chillies</span>
-
-            <span>Garlic</span>
-
-            <span>Onion</span>
-
-            <span>Herbs</span>
-
-            <span>Vinegar</span>
-
-            <span>Water</span>
-
-            <span>Salt</span>
-
-            <span>Lemon Juice</span>
-
-            <span>Selected Spices</span>
-
-            <span>Natural Flavourings</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-SERVING SUGGESTIONS
-=================================================== -->
-
-<section class="serving-section">
-
-    <div class="container">
-
-        <h2>
-
-            Best Enjoyed With
-
-        </h2>
-
-        <div class="serving-grid">
-
-            <div class="serving-card">
-
-                🥩
-
-                <h4>Steak</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🌭
-
-                <h4>Boerewors</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🥗
-
-                <h4>Fresh Salads</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🌮
-
-                <h4>Wraps</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🐟
-
-                <h4>Seafood</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🔥
-
-                <h4>Braai</h4>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-ALLERGEN INFORMATION
-=================================================== -->
-
-<section class="allergen-section">
-
-    <div class="container">
-
-        <h2>
-
-            Allergen Information
-
-        </h2>
-
-        <div class="warning-card">
-
+    </section>
+
+    <!-- =================================================== NUTRITION INFORMATION =================================================== -->
+
+    <section class="nutrition-section">
+        <div class="container">
+            <h2>
+                Nutritional Information
+            </h2>
             <p>
-
-                Please refer to the product label for the latest allergen information. This product may contain or be manufactured in a facility that also processes soy, milk, gluten, egg, mustard, sesame, peanuts, tree nuts and sulphites.
-
+                Average nutritional values per 100 ml.
             </p>
+            <table class="nutrition-table">
+                <thead>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Per 100 ml</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Energy</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
 
+                    <tr>
+                        <td>Protein</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Carbohydrates</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>of which Sugars</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Total Fat</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturated Fat</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dietary Fibre</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sodium</td>
+                        <td><!-- Replace with label value --></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </section>
 
-    </div>
+    <!-- =================================================== INGREDIENTS =================================================== -->
 
-</section>
-
-<!-- ===================================================
-STORAGE INFORMATION
-=================================================== -->
-
-<section class="storage-section">
-
-    <div class="container">
-
-        <h2>
-
-            Storage Instructions
-
-        </h2>
-
-        <div class="storage-grid">
-
-            <div class="storage-card">
-
-                🌡
-
-                <h4>Store In A Cool Dry Place</h4>
-
+    <section class="ingredients-section">
+        <div class="container">
+            <h2>
+                Ingredients
+            </h2>
+            <div class="ingredient-grid">
+                <span>Pure Honey</span>
+                <span>Selected Chillies</span>
+                <span>Garlic</span>
+                <span>Apple Cider Vinegar</span>
+                <span>Natural Herbs</span>
+                <span>Sea Salt</span>
+                <span>Water</span>
+                <span>Natural Spices</span>
+                <span>Lemon Juice</span>
+                <span>Natural Flavourings</span>
             </div>
-
-            <div class="storage-card">
-
-                ❄
-
-                <h4>Refrigerate After Opening</h4>
-
-            </div>
-
-            <div class="storage-card">
-
-                🗓
-
-                <h4>Best Before: See Bottle</h4>
-
-            </div>
-
         </div>
+    </section>
 
-    </div>
+    <!-- =================================================== SERVING SUGGESTIONS =================================================== -->
 
-</section>
+    <section class="serving-section">
+        <div class="container">
+            <h2>
+                Perfect Pairings
+            </h2>
 
-<!-- ===================================================
-PRODUCT HIGHLIGHTS
-=================================================== -->
-
-<section class="product-highlights">
-
-    <div class="container">
-
-        <h2>
-
-            Why You'll Love It
-
-        </h2>
-
-        <div class="highlight-grid">
-
-            <div class="highlight-card">
-
-                🌿
-
-                <h4>Fresh Flavour</h4>
-
-                <p>
-
-                    Bright herbaceous notes balanced with cayenne heat.
-
-                </p>
-
-            </div>
-
-            <div class="highlight-card">
-
-                🔥
-
-                <h4>Medium-High Heat</h4>
-
-                <p>
-
-                    A bold kick without overpowering your meal.
-
-                </p>
-
-            </div>
-
-            <div class="highlight-card">
-
-                🍽
-
-                <h4>Versatile</h4>
-
-                <p>
-
-                    Perfect as a marinade, dip, cooking sauce or table condiment.
-
-                </p>
-
-            </div>
-
-            <div class="highlight-card">
-
-                🇿🇦
-
-                <h4>Proudly South African</h4>
-
-                <p>
-
-                    Crafted with quality ingredients for authentic local flavour.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-CUSTOMER REVIEW
-=================================================== -->
-
-<section class="review-section">
-
-    <div class="container">
-
-        <blockquote>
-
-            "Fresh, vibrant and packed with flavour. The perfect balance between herbal freshness and chilli heat. A favourite for our weekend braais."
-
-        </blockquote>
-
-        <cite>
-
-            ★★★★★
-
-            Recommended by Piquant Customers
-
-        </cite>
-
-    </div>
-
-</section>
-
-    <!-- ===================================================
-HOT HONEY RANGE
-=================================================== -->
-
-<section id="hothoney" class="sauce-showcase">
-
-    <div class="container">
-
-        <div class="sauce-layout">
-
-            <!-- Product Gallery -->
-
-            <div class="sauce-gallery">
-
-                <div class="main-image">
-
-                    <img src="Images/hot-honey-bottle.png"
-                        alt="Piquant Hot Honey Range">
-
+            <div class="serving-grid">
+                <div class="serving-card">
+                    🍕
+                    <h4>Pizza</h4>
                 </div>
 
-                <div class="thumbnail-gallery">
-
-                    <img src="Images/hot-honey-bottle.png"
-                        alt="Bottle Front">
-
-                    <img src="Images/hot-honey-label.png"
-                        alt="Nutrition Label">
-
-                    <img src="Images/hot-honey-food.jpg"
-                        alt="Serving Suggestion">
-
+                <div class="serving-card">
+                    🍗
+                    <h4>Fried Chicken</h4>
                 </div>
 
+                <div class="serving-card">
+                    🧀
+                    <h4>Cheese Boards</h4>
+                </div>
+
+                <div class="serving-card">
+                    🥞
+                    <h4>Pancakes</h4>
+                </div>
+
+                <div class="serving-card">
+                    🍔
+                    <h4>Burgers</h4>
+                </div>
+
+                <div class="serving-card">
+                    🥓
+                    <h4>Breakfast Dishes</h4>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Product Information -->
+    <!-- =================================================== ALLERGEN INFORMATION =================================================== -->
 
-            <div class="sauce-information">
+    <section class="allergen-section">
+        <div class="container">
+            <h2>
+                Allergen Information
+            </h2>
 
-                <span class="category">
-
-                    Signature Collection
-
-                </span>
-
-                <h2>
-
-                    Hot Honey Range
-
-                </h2>
-
-                <h4>
-
-                    Sweet • Smooth • Fiery
-
-                </h4>
-
+            <div class="warning-card">
                 <p>
-
-                    Hot Honey Range combines premium honey with
-                    carefully selected chillies to create the perfect
-                    balance between sweetness and heat. Whether
-                    drizzled over pizza, paired with fried chicken,
-                    glazed onto grilled meats or served with cheese,
-                    this versatile sauce delivers a bold flavour
-                    experience that keeps you coming back for more.
-
+                    Please refer to the product label for the latest allergen information. This product may be manufactured in a facility that also processes soy, milk, gluten, egg, mustard, sesame, peanuts, tree nuts and sulphites.
                 </p>
+            </div>
+        </div>
+    </section>
 
-                <div class="product-meta">
+    <!-- =================================================== STORAGE INFORMATION =================================================== -->
 
-                    <div>
+    <section class="storage-section">
+        <div class="container">
+            <h2>
+                Storage Instructions
+            </h2>
 
-                        <strong>Volume</strong>
-
-                        <span>250 ml</span>
-
-                    </div>
-
-                    <div>
-
-                        <strong>Price</strong>
-
-                        <span>R50.00</span>
-
-                    </div>
-
-                    <div>
-
-                        <strong>Heat Level</strong>
-
-                        <span>
-
-                            🌶🌶🌶◯◯
-
-                        </span>
-
-                    </div>
-
+            <div class="storage-grid">
+                <div class="storage-card">
+                    🌡
+                    <h4>Store In A Cool Dry Place</h4>
                 </div>
 
-                <div class="button-group">
-
-                    <a href="#"
-
-                        class="primary-btn">
-
-                        Buy Now
-
-                    </a>
-
-                    <a href="https://wa.me/27721234567?text=Hello%20Piquant,%20I'd%20like%20to%20know%20more%20about%20the%20Hot%20Honey%20Range."
-
-                        target="_blank"
-
-                        class="secondary-btn">
-
-                        WhatsApp Enquiry
-
-                    </a>
-
+                <div class="storage-card">
+                    ❄
+                    <h4>Refrigerate After Opening</h4>
                 </div>
 
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-FLAVOUR PROFILE
-=================================================== -->
-
-<section class="flavour-profile">
-
-    <div class="container">
-
-        <h2>
-
-            Flavour Profile
-
-        </h2>
-
-        <div class="profile-grid">
-
-            <div class="profile-item">
-
-                <span>Heat</span>
-
-                <div class="meter">
-
-                    <div class="fill heat-3"></div>
-
+                <div class="storage-card">
+                    🗓
+                    <h4>Best Before: See Bottle</h4>
                 </div>
-
             </div>
+        </div>
+    </section>
 
-            <div class="profile-item">
+    <!-- =================================================== PRODUCT HIGHLIGHTS =================================================== -->
 
-                <span>Sweetness</span>
-
-                <div class="meter">
-
-                    <div class="fill sweet-5"></div>
-
+    <section class="product-highlights">
+        <div class="container">
+            <h2>
+                Why Choose Hot Honey?
+            </h2>
+            <div class="highlight-grid">
+                <div class="highlight-card">
+                    🍯
+                    <h4>Rich Honey</h4>
+                    <p>
+                        Crafted with premium honey for natural sweetness.
+                    </p>
                 </div>
-
-            </div>
-
-            <div class="profile-item">
-
-                <span>Smokiness</span>
-
-                <div class="meter">
-
-                    <div class="fill smoky-2"></div>
-
+                <div class="highlight-card">
+                    🌶
+                    <h4>Balanced Heat</h4>
+                    <p>
+                        A gentle chilli warmth that complements the honey.
+                    </p>
                 </div>
-
-            </div>
-
-            <div class="profile-item">
-
-                <span>Versatility</span>
-
-                <div class="meter">
-
-                    <div class="fill versatile-5"></div>
-
+                <div class="highlight-card">
+                    🍽
+                    <h4>Versatile</h4>
+                    <p>
+                        Perfect as a drizzle, glaze, dip or cooking sauce.
+                    </p>
                 </div>
-
+                <div class="highlight-card">
+                    🇿🇦
+                    <h4>Proudly South African</h4>
+                    <p>
+                        Crafted for local flavour with premium quality ingredients.
+                    </p>
+                </div>
             </div>
-
         </div>
+    </section>
 
-    </div>
+    <!-- =================================================== CUSTOMER REVIEW =================================================== -->
 
-</section>
-
-<!-- ===================================================
-NUTRITION INFORMATION
-=================================================== -->
-
-<section class="nutrition-section">
-
-    <div class="container">
-
-        <h2>
-
-            Nutritional Information
-
-        </h2>
-
-        <p>
-
-            Average nutritional values per 100 ml.
-
-        </p>
-
-        <table class="nutrition-table">
-
-            <thead>
-
-                <tr>
-
-                    <th>Nutrient</th>
-
-                    <th>Per 100 ml</th>
-
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>Energy</td>
-                    <td><!-- Replace with label value --></td>
-                </tr>
-
-                <tr>
-                    <td>Protein</td>
-                    <td><!-- Replace with label value --></td>
-                </tr>
-
-                <tr>
-                    <td>Carbohydrates</td>
-                    <td><!-- Replace with label value --></td>
-                </tr>
-
-                <tr>
-                    <td>of which Sugars</td>
-                    <td><!-- Replace with label value --></td>
-                </tr>
-
-                <tr>
-                    <td>Total Fat</td>
-                    <td><!-- Replace with label value --></td>
-                </tr>
-
-                <tr>
-                    <td>Saturated Fat</td>
-                    <td><!-- Replace with label value --></td>
-                </tr>
-
-                <tr>
-                    <td>Dietary Fibre</td>
-                    <td><!-- Replace with label value --></td>
-                </tr>
-
-                <tr>
-                    <td>Sodium</td>
-                    <td><!-- Replace with label value --></td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-INGREDIENTS
-=================================================== -->
-
-<section class="ingredients-section">
-
-    <div class="container">
-
-        <h2>
-
-            Ingredients
-
-        </h2>
-
-        <div class="ingredient-grid">
-
-            <span>Pure Honey</span>
-
-            <span>Selected Chillies</span>
-
-            <span>Garlic</span>
-
-            <span>Apple Cider Vinegar</span>
-
-            <span>Natural Herbs</span>
-
-            <span>Sea Salt</span>
-
-            <span>Water</span>
-
-            <span>Natural Spices</span>
-
-            <span>Lemon Juice</span>
-
-            <span>Natural Flavourings</span>
-
+    <section class="review-section">
+        <div class="container">
+            <blockquote>
+                "Sweet enough for pizza, spicy enough for wings. This has become my favourite table sauce."
+            </blockquote>
+            <cite>
+                ★★★★★
+                Customer Favourite
+            </cite>
         </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- ===================================================
-SERVING SUGGESTIONS
-=================================================== -->
-
-<section class="serving-section">
-
-    <div class="container">
-
-        <h2>
-
-            Perfect Pairings
-
-        </h2>
-
-        <div class="serving-grid">
-
-            <div class="serving-card">
-
-                🍕
-
-                <h4>Pizza</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🍗
-
-                <h4>Fried Chicken</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🧀
-
-                <h4>Cheese Boards</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🥞
-
-                <h4>Pancakes</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🍔
-
-                <h4>Burgers</h4>
-
-            </div>
-
-            <div class="serving-card">
-
-                🥓
-
-                <h4>Breakfast Dishes</h4>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-ALLERGEN INFORMATION
-=================================================== -->
-
-<section class="allergen-section">
-
-    <div class="container">
-
-        <h2>
-
-            Allergen Information
-
-        </h2>
-
-        <div class="warning-card">
-
-            <p>
-
-                Please refer to the product label for the latest allergen information. This product may be manufactured in a facility that also processes soy, milk, gluten, egg, mustard, sesame, peanuts, tree nuts and sulphites.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-STORAGE INFORMATION
-=================================================== -->
-
-<section class="storage-section">
-
-    <div class="container">
-
-        <h2>
-
-            Storage Instructions
-
-        </h2>
-
-        <div class="storage-grid">
-
-            <div class="storage-card">
-
-                🌡
-
-                <h4>Store In A Cool Dry Place</h4>
-
-            </div>
-
-            <div class="storage-card">
-
-                ❄
-
-                <h4>Refrigerate After Opening</h4>
-
-            </div>
-
-            <div class="storage-card">
-
-                🗓
-
-                <h4>Best Before: See Bottle</h4>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-PRODUCT HIGHLIGHTS
-=================================================== -->
-
-<section class="product-highlights">
-
-    <div class="container">
-
-        <h2>
-
-            Why Choose Hot Honey?
-
-        </h2>
-
-        <div class="highlight-grid">
-
-            <div class="highlight-card">
-
-                🍯
-
-                <h4>Rich Honey</h4>
-
-                <p>
-
-                    Crafted with premium honey for natural sweetness.
-
-                </p>
-
-            </div>
-
-            <div class="highlight-card">
-
-                🌶
-
-                <h4>Balanced Heat</h4>
-
-                <p>
-
-                    A gentle chilli warmth that complements the honey.
-
-                </p>
-
-            </div>
-
-            <div class="highlight-card">
-
-                🍽
-
-                <h4>Versatile</h4>
-
-                <p>
-
-                    Perfect as a drizzle, glaze, dip or cooking sauce.
-
-                </p>
-
-            </div>
-
-            <div class="highlight-card">
-
-                🇿🇦
-
-                <h4>Proudly South African</h4>
-
-                <p>
-
-                    Crafted for local flavour with premium quality ingredients.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================
-CUSTOMER REVIEW
-=================================================== -->
-
-<section class="review-section">
-
-    <div class="container">
-
-        <blockquote>
-
-            "Sweet enough for pizza, spicy enough for wings. This has become my favourite table sauce."
-
-        </blockquote>
-
-        <cite>
-
-            ★★★★★
-
-            Customer Favourite
-
-        </cite>
-
-    </div>
-
-            </section>
+</body>
