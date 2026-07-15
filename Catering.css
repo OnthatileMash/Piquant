@@ -345,19 +345,19 @@ p{
 
 .page-loader{
 
-    position:fixed;
-
-    inset:0;
+    position: fixed;
+    inset: 0;
 
     background:
-radial-gradient(
-circle at center,
-rgba(214,95,20,0.18) 0%,
-rgba(90,29,18,0.28) 25%,
-rgba(45,9,9,0.65) 50%,
-rgba(20,8,8,0.9) 75%,
-#050505 100%
-);
+
+    radial-gradient(
+    circle at center,
+    rgba(255,155,36,0.15) 0%,
+    rgba(214,95,20,0.18) 20%,
+    rgba(90,29,18,0.35) 45%,
+    rgba(45,9,9,0.75) 70%,
+    #050505 100%
+    ),
 
     linear-gradient(
     180deg,
@@ -366,18 +366,15 @@ rgba(20,8,8,0.9) 75%,
     #230909 65%,
     #050505 100%
     );
-    display:grid;
 
-    place-items:center;
+    display: grid;
+    place-items: center;
 
-    z-index:9999;
+    z-index: 9999;
 
-    transition:opacity .7s ease;
-
-    animation: emberGlow 8s ease-in-out infinite;
+    transition: opacity .7s ease;
 
 }
-
 .page-loader.loaded{
 
     opacity:0;
