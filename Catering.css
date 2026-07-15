@@ -349,8 +349,23 @@ p{
 
     inset:0;
 
-    background:var(--black);
+    background:
+radial-gradient(
+circle at center,
+rgba(214,95,20,0.18) 0%,
+rgba(90,29,18,0.28) 25%,
+rgba(45,9,9,0.65) 50%,
+rgba(20,8,8,0.9) 75%,
+#050505 100%
+);
 
+    linear-gradient(
+    180deg,
+    #050505 0%,
+    #1a0707 35%,
+    #230909 65%,
+    #050505 100%
+    );
     display:grid;
 
     place-items:center;
@@ -358,6 +373,8 @@ p{
     z-index:9999;
 
     transition:opacity .7s ease;
+
+    animation: emberGlow 8s ease-in-out infinite;
 
 }
 
@@ -384,6 +401,15 @@ p{
     color:var(--cream);
 
     font-size:1.2rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    text-shadow:
+
+    0 0 10px rgba(214,95,20,.45),
+    0 0 20px rgba(214,95,20,.25);
 
 }
 
@@ -2202,7 +2228,27 @@ ANIMATIONS
 
 }
 
+@keyframes emberGlow{
 
+    0%{
+
+        filter: brightness(1);
+
+    }
+
+    50%{
+
+        filter: brightness(1.12);
+
+    }
+
+    100%{
+
+        filter: brightness(1);
+
+    }
+
+}
 /*==================================================
 END OF FILE
 
