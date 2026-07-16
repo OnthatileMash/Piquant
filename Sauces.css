@@ -223,22 +223,26 @@ img{
 
     background:
 
-    radial-gradient(
-    circle at center,
-    rgba(255,155,36,0.15) 0%,
-    rgba(214,95,20,0.18) 20%,
-    rgba(90,29,18,0.35) 45%,
-    rgba(45,9,9,0.75) 70%,
-    #050505 100%
-    ),
+/* Golden Emerald Glow */
+radial-gradient(
+circle at center,
+rgba(255, 220, 120, 0.10) 0%,
+rgba(102, 255, 178, 0.15) 10%,
+rgba(46, 204, 113, 0.20) 25%,
+rgba(0, 168, 107, 0.30) 45%,
+rgba(0, 109, 91, 0.50) 65%,
+rgba(0, 77, 64, 0.75) 85%,
+#050505 100%
+),
 
-    linear-gradient(
-    180deg,
-    #050505 0%,
-    #1a0707 35%,
-    #230909 65%,
-    #050505 100%
-    );
+/* Emerald Smoke Layer */
+linear-gradient(
+135deg,
+#02120d 0%,
+#053b2d 35%,
+#0a4d3b 60%,
+#02120d 100%
+);
 
     display: grid;
     place-items: center;
