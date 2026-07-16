@@ -374,7 +374,10 @@ p{
 
     transition: opacity .7s ease;
 
+    animation: emberGlow 8s ease-in-out infinite;
+
 }
+
 .page-loader.loaded{
 
     opacity:0;
@@ -633,6 +636,28 @@ ANIMATIONS
     }
 
 }
+
+        @keyframes emberGlow{
+
+    0%{
+
+        filter: brightness(1);
+
+    }
+
+    50%{
+
+        filter: brightness(1.12);
+
+    }
+
+    100%{
+
+        filter: brightness(1);
+
+    }
+
+        }
 /*==================================================
 9. QUICK NAVIGATION
 ==================================================*/
