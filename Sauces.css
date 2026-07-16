@@ -307,6 +307,9 @@ SAUCE LOADER
 
 }
 
+.loader-content image{
+    align-items: center;
+}
 
 .construction-status{
 
