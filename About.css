@@ -328,6 +328,80 @@ p {
     color: var(--text-muted);
 }
 
+/*==================================================
+6. PAGE LOADER
+==================================================*/
+
+.page-loader{
+
+    position: fixed;
+    inset: 0;
+
+    background:
+
+/* Golden Emerald Glow */
+radial-gradient(
+circle at center,
+rgba(255, 220, 120, 0.10) 0%,
+rgba(102, 255, 178, 0.15) 10%,
+rgba(46, 204, 113, 0.20) 25%,
+rgba(0, 168, 107, 0.30) 45%,
+rgba(0, 109, 91, 0.50) 65%,
+rgba(0, 77, 64, 0.75) 85%,
+#050505 100%
+),
+
+/* Emerald Smoke Layer */
+linear-gradient(
+135deg,
+#02120d 0%,
+#053b2d 35%,
+#0a4d3b 60%,
+#02120d 100%
+);
+
+    display: grid;
+    place-items: center;
+
+    z-index: 9999;
+
+    transition: opacity .7s ease;
+
+}
+.page-loader.loaded{
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+.loader-logo{
+
+    width:130px;
+
+    animation:loaderPulse 2s infinite;
+
+}
+
+.page-loader h2{
+
+    margin-top:1.5rem;
+
+    color:var(--cream);
+
+    font-size:1.2rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    text-shadow:
+
+    0 0 10px rgba(214,95,20,.45),
+    0 0 20px rgba(214,95,20,.25);
+
+}
 
 /* =========================================================
    05. HEADER
