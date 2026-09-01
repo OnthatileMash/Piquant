@@ -973,7 +973,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     gap: 8px;
 }
 
@@ -981,7 +980,6 @@ ul {
 .footer-links a,
 .footer-about a {
     color: rgba(255, 255, 255, 0.72);
-
     transition:
         color var(--transition-fast);
 }
@@ -996,37 +994,29 @@ ul {
 .footer-hours p,
 .footer-about p {
     color: rgba(255, 255, 255, 0.65);
-
     margin-bottom: 10px;
 }
 
 
 .footer-about a {
     display: inline-block;
-
     margin-top: 6px;
-
     color: var(--accent-gold);
-
     font-weight: 700;
 }
 
 
 .footer-bottom {
     padding: 22px 0;
-
     border-top:
         1px solid rgba(255, 255, 255, 0.10);
-
     text-align: center;
 }
 
 
 .footer-bottom p {
     margin-inline: auto;
-
     color: rgba(255, 255, 255, 0.48);
-
     font-size: 0.82rem;
 }
 
