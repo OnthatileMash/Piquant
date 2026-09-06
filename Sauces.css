@@ -94,7 +94,7 @@ ul {
         );
 }
 
-.reveal{
+/*.reveal{
     opacity:0;
     transform:translateY(28px);
     transition: opacity .7s ease, transform .7s ease;
@@ -103,7 +103,7 @@ ul {
 .reveal.is-visible{
     opacity:1;
     transform:translateY(0);
-}
+}*/
 
 /* =================================== SECTION DIVIDER SECTION =================================== */
 .section-divider {
